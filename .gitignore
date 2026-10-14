@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+reproduced/
+outputs/
+examples/synthetic_pair.npz
+examples/candidate.json

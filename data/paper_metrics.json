@@ -1,0 +1,965 @@
+{
+  "protocol": {
+    "loose_label": "RRE<15deg, RTE<0.30 target extent, RSE<20%",
+    "gamma": 1.6423497928914073,
+    "native_normalization": "within-solver empirical percentile from ScanNet calibration scenes",
+    "native_available_methods": [
+      "bufferx",
+      "cofinet",
+      "fcgf",
+      "fpfh_ransac",
+      "geotransformer",
+      "parenet",
+      "predator",
+      "randpcr",
+      "refreshreg"
+    ],
+    "native_unavailable_methods": [
+      "splatreg"
+    ],
+    "calibration_outputs": 410,
+    "calibration_positives": 37,
+    "calibration_failures_used_for_gamma": 373,
+    "support_threshold": 0.6328888888888888,
+    "trimmed_distance_threshold": -0.00756660728108738,
+    "native_percentile_threshold": 1.0
+  },
+  "discrimination": {
+    "scannet_heldout": {
+      "outputs": 410,
+      "positives": 40,
+      "scores": {
+        "internal_consensus": {
+          "auroc": 0.8275337837837837,
+          "average_precision": 0.5191533822336404
+        },
+        "native_solverwise_percentile": {
+          "auroc": 0.744054054054054,
+          "average_precision": 0.1852522374419818
+        },
+        "negative_trimmed_distance": {
+          "auroc": 0.9087162162162162,
+          "average_precision": 0.6090742956174401
+        },
+        "support_04": {
+          "auroc": 0.95375,
+          "average_precision": 0.7916747019055533
+        },
+        "ratio_q95": {
+          "auroc": 0.9505405405405406,
+          "average_precision": 0.7363754021072447
+        }
+      },
+      "per_method": {
+        "bufferx": {
+          "outputs": 41,
+          "positives": 15,
+          "negatives": 26,
+          "internal_consensus": {
+            "auroc": 0.841025641025641,
+            "average_precision": 0.7625969934006009
+          },
+          "support_04": {
+            "auroc": 0.8769230769230769,
+            "average_precision": 0.813516513442984
+          },
+          "ratio_q95": {
+            "auroc": 0.8769230769230769,
+            "average_precision": 0.7973681564393639
+          }
+        },
+        "cofinet": {
+          "outputs": 41,
+          "positives": 4,
+          "negatives": 37,
+          "internal_consensus": {
+            "auroc": 0.8108108108108107,
+            "average_precision": 0.6833333333333333
+          },
+          "support_04": {
+            "auroc": 0.8445945945945946,
+            "average_precision": 0.5226190476190476
+          },
+          "ratio_q95": {
+            "auroc": 0.9594594594594595,
+            "average_precision": 0.7986111111111112
+          }
+        },
+        "fcgf": {
+          "outputs": 41,
+          "positives": 5,
+          "negatives": 36,
+          "internal_consensus": {
+            "auroc": 0.8611111111111112,
+            "average_precision": 0.5944444444444444
+          },
+          "support_04": {
+            "auroc": 0.9888888888888888,
+            "average_precision": 0.9428571428571428
+          },
+          "ratio_q95": {
+            "auroc": 0.9555555555555556,
+            "average_precision": 0.7433333333333334
+          }
+        },
+        "fpfh_ransac": {
+          "outputs": 41,
+          "positives": 1,
+          "negatives": 40,
+          "internal_consensus": {
+            "auroc": 0.85,
+            "average_precision": 0.1111111111111111
+          },
+          "support_04": {
+            "auroc": 1.0,
+            "average_precision": 1.0
+          },
+          "ratio_q95": {
+            "auroc": 1.0,
+            "average_precision": 1.0
+          }
+        },
+        "geotransformer": {
+          "outputs": 41,
+          "positives": 8,
+          "negatives": 33,
+          "internal_consensus": {
+            "auroc": 0.9147727272727273,
+            "average_precision": 0.8202579365079365
+          },
+          "support_04": {
+            "auroc": 0.9886363636363636,
+            "average_precision": 0.9526289682539683
+          },
+          "ratio_q95": {
+            "auroc": 0.9734848484848484,
+            "average_precision": 0.899440836940837
+          }
+        },
+        "parenet": {
+          "outputs": 41,
+          "positives": 5,
+          "negatives": 36,
+          "internal_consensus": {
+            "auroc": 0.9666666666666668,
+            "average_precision": 0.7761904761904761
+          },
+          "support_04": {
+            "auroc": 0.9888888888888888,
+            "average_precision": 0.9428571428571428
+          },
+          "ratio_q95": {
+            "auroc": 0.9888888888888888,
+            "average_precision": 0.9428571428571428
+          }
+        },
+        "predator": {
+          "outputs": 41,
+          "positives": 0,
+          "negatives": 41,
+          "internal_consensus": {
+            "auroc": null,
+            "average_precision": null
+          },
+          "support_04": {
+            "auroc": null,
+            "average_precision": null
+          },
+          "ratio_q95": {
+            "auroc": null,
+            "average_precision": null
+          }
+        },
+        "randpcr": {
+          "outputs": 41,
+          "positives": 0,
+          "negatives": 41,
+          "internal_consensus": {
+            "auroc": null,
+            "average_precision": null
+          },
+          "support_04": {
+            "auroc": null,
+            "average_precision": null
+          },
+          "ratio_q95": {
+            "auroc": null,
+            "average_precision": null
+          }
+        },
+        "refreshreg": {
+          "outputs": 41,
+          "positives": 1,
+          "negatives": 40,
+          "internal_consensus": {
+            "auroc": 0.825,
+            "average_precision": 0.125
+          },
+          "support_04": {
+            "auroc": 0.975,
+            "average_precision": 0.5
+          },
+          "ratio_q95": {
+            "auroc": 0.95,
+            "average_precision": 0.3333333333333333
+          }
+        },
+        "splatreg": {
+          "outputs": 41,
+          "positives": 1,
+          "negatives": 40,
+          "internal_consensus": {
+            "auroc": 0.5,
+            "average_precision": 0.024390243902439025
+          },
+          "support_04": {
+            "auroc": 0.975,
+            "average_precision": 0.5
+          },
+          "ratio_q95": {
+            "auroc": 0.95,
+            "average_precision": 0.3333333333333333
+          }
+        }
+      },
+      "macro": {
+        "internal_consensus": {
+          "auroc": 0.8211733696108696,
+          "average_precision": 0.4871655673612927,
+          "defined_systems": 8
+        },
+        "support_04": {
+          "auroc": 0.9547414766164766,
+          "average_precision": 0.7718098518787857,
+          "defined_systems": 8
+        },
+        "ratio_q95": {
+          "auroc": 0.9567889786639787,
+          "average_precision": 0.7310346559185568,
+          "defined_systems": 8
+        }
+      },
+      "defined": 8
+    },
+    "eth3d_common": {
+      "outputs": 185,
+      "positives": 62,
+      "scores": {
+        "internal_consensus": {
+          "auroc": 0.720364542355101,
+          "average_precision": 0.6567569866185043
+        },
+        "native_solverwise_percentile": {
+          "auroc": 0.6921059533175976,
+          "average_precision": 0.4581577624447435
+        },
+        "negative_trimmed_distance": {
+          "auroc": 0.875163912929452,
+          "average_precision": 0.775220210572458
+        },
+        "support_04": {
+          "auroc": 0.9581694204038815,
+          "average_precision": 0.8495886470249749
+        },
+        "ratio_q95": {
+          "auroc": 0.958825072121689,
+          "average_precision": 0.9211904894492872
+        }
+      },
+      "per_method": {
+        "bufferx": {
+          "outputs": 19,
+          "positives": 15,
+          "negatives": 4,
+          "internal_consensus": {
+            "auroc": 0.85,
+            "average_precision": 0.959049284049284
+          },
+          "support_04": {
+            "auroc": 0.6166666666666667,
+            "average_precision": 0.8087460796284325
+          },
+          "ratio_q95": {
+            "auroc": 0.7,
+            "average_precision": 0.8915041548865077
+          }
+        },
+        "cofinet": {
+          "outputs": 19,
+          "positives": 15,
+          "negatives": 4,
+          "internal_consensus": {
+            "auroc": 0.75,
+            "average_precision": 0.889274929863165
+          },
+          "support_04": {
+            "auroc": 1.0,
+            "average_precision": 1.0
+          },
+          "ratio_q95": {
+            "auroc": 1.0,
+            "average_precision": 1.0
+          }
+        },
+        "fcgf": {
+          "outputs": 19,
+          "positives": 6,
+          "negatives": 13,
+          "internal_consensus": {
+            "auroc": 0.6923076923076923,
+            "average_precision": 0.4986111111111111
+          },
+          "support_04": {
+            "auroc": 1.0,
+            "average_precision": 1.0
+          },
+          "ratio_q95": {
+            "auroc": 1.0,
+            "average_precision": 1.0
+          }
+        },
+        "fpfh_ransac": {
+          "outputs": 14,
+          "positives": 0,
+          "negatives": 14,
+          "internal_consensus": {
+            "auroc": null,
+            "average_precision": null
+          },
+          "support_04": {
+            "auroc": null,
+            "average_precision": null
+          },
+          "ratio_q95": {
+            "auroc": null,
+            "average_precision": null
+          }
+        },
+        "geotransformer": {
+          "outputs": 19,
+          "positives": 9,
+          "negatives": 10,
+          "internal_consensus": {
+            "auroc": 0.7555555555555555,
+            "average_precision": 0.7572751322751323
+          },
+          "support_04": {
+            "auroc": 0.9555555555555556,
+            "average_precision": 0.9575757575757577
+          },
+          "ratio_q95": {
+            "auroc": 0.9555555555555556,
+            "average_precision": 0.9535634118967453
+          }
+        },
+        "parenet": {
+          "outputs": 19,
+          "positives": 5,
+          "negatives": 14,
+          "internal_consensus": {
+            "auroc": 0.8857142857142857,
+            "average_precision": 0.7592857142857143
+          },
+          "support_04": {
+            "auroc": 0.9285714285714286,
+            "average_precision": 0.71
+          },
+          "ratio_q95": {
+            "auroc": 1.0,
+            "average_precision": 1.0
+          }
+        },
+        "predator": {
+          "outputs": 19,
+          "positives": 0,
+          "negatives": 19,
+          "internal_consensus": {
+            "auroc": null,
+            "average_precision": null
+          },
+          "support_04": {
+            "auroc": null,
+            "average_precision": null
+          },
+          "ratio_q95": {
+            "auroc": null,
+            "average_precision": null
+          }
+        },
+        "randpcr": {
+          "outputs": 19,
+          "positives": 0,
+          "negatives": 19,
+          "internal_consensus": {
+            "auroc": null,
+            "average_precision": null
+          },
+          "support_04": {
+            "auroc": null,
+            "average_precision": null
+          },
+          "ratio_q95": {
+            "auroc": null,
+            "average_precision": null
+          }
+        },
+        "refreshreg": {
+          "outputs": 19,
+          "positives": 4,
+          "negatives": 15,
+          "internal_consensus": {
+            "auroc": 0.8250000000000001,
+            "average_precision": 0.5932539682539683
+          },
+          "support_04": {
+            "auroc": 1.0,
+            "average_precision": 1.0
+          },
+          "ratio_q95": {
+            "auroc": 1.0,
+            "average_precision": 1.0
+          }
+        },
+        "splatreg": {
+          "outputs": 19,
+          "positives": 8,
+          "negatives": 11,
+          "internal_consensus": {
+            "auroc": 0.5,
+            "average_precision": 0.42105263157894735
+          },
+          "support_04": {
+            "auroc": 0.7159090909090909,
+            "average_precision": 0.6271728883861237
+          },
+          "ratio_q95": {
+            "auroc": 0.7045454545454546,
+            "average_precision": 0.765296743697479
+          }
+        }
+      },
+      "macro": {
+        "internal_consensus": {
+          "auroc": 0.7512253619396476,
+          "average_precision": 0.6968289673453317,
+          "defined_systems": 7
+        },
+        "support_04": {
+          "auroc": 0.8881003916718202,
+          "average_precision": 0.8719278179414733,
+          "defined_systems": 7
+        },
+        "ratio_q95": {
+          "auroc": 0.9085858585858586,
+          "average_precision": 0.9443377586401045,
+          "defined_systems": 7
+        }
+      },
+      "defined": 7
+    },
+    "bevgsreg_common": {
+      "outputs": 223,
+      "positives": 122,
+      "scores": {
+        "internal_consensus": {
+          "auroc": 0.7247605908131798,
+          "average_precision": 0.7748381620359545
+        },
+        "native_solverwise_percentile": {
+          "auroc": 0.777024833630904,
+          "average_precision": 0.7385659418016549
+        },
+        "negative_trimmed_distance": {
+          "auroc": 0.9085375750689823,
+          "average_precision": 0.9299709597590717
+        },
+        "support_04": {
+          "auroc": 0.9328842720337607,
+          "average_precision": 0.9437439827990503
+        },
+        "ratio_q95": {
+          "auroc": 0.8624411621490018,
+          "average_precision": 0.8257980377088536
+        }
+      },
+      "per_method": {
+        "bufferx": {
+          "outputs": 39,
+          "positives": 26,
+          "negatives": 13,
+          "internal_consensus": {
+            "auroc": 0.9349112426035503,
+            "average_precision": 0.9675011830274987
+          },
+          "support_04": {
+            "auroc": 0.893491124260355,
+            "average_precision": 0.945339212699133
+          },
+          "ratio_q95": {
+            "auroc": 0.92603550295858,
+            "average_precision": 0.9612795491374587
+          }
+        },
+        "cofinet": {
+          "outputs": 39,
+          "positives": 29,
+          "negatives": 10,
+          "internal_consensus": {
+            "auroc": 0.896551724137931,
+            "average_precision": 0.9629366677277009
+          },
+          "support_04": {
+            "auroc": 0.9413793103448276,
+            "average_precision": 0.9777314327253057
+          },
+          "ratio_q95": {
+            "auroc": 0.8551724137931034,
+            "average_precision": 0.8825638626245047
+          }
+        },
+        "fpfh_ransac": {
+          "outputs": 28,
+          "positives": 6,
+          "negatives": 22,
+          "internal_consensus": {
+            "auroc": 0.9242424242424243,
+            "average_precision": 0.8027777777777778
+          },
+          "support_04": {
+            "auroc": 0.9848484848484849,
+            "average_precision": 0.9484126984126984
+          },
+          "ratio_q95": {
+            "auroc": 0.9318181818181818,
+            "average_precision": 0.8152777777777778
+          }
+        },
+        "geotransformer": {
+          "outputs": 39,
+          "positives": 25,
+          "negatives": 14,
+          "internal_consensus": {
+            "auroc": 0.9057142857142858,
+            "average_precision": 0.9454747154029024
+          },
+          "support_04": {
+            "auroc": 0.9028571428571428,
+            "average_precision": 0.9366560737547265
+          },
+          "ratio_q95": {
+            "auroc": 0.8285714285714285,
+            "average_precision": 0.80935986159826
+          }
+        },
+        "parenet": {
+          "outputs": 39,
+          "positives": 17,
+          "negatives": 22,
+          "internal_consensus": {
+            "auroc": 0.9010695187165776,
+            "average_precision": 0.8645654278439746
+          },
+          "support_04": {
+            "auroc": 0.9197860962566845,
+            "average_precision": 0.9315615533881789
+          },
+          "ratio_q95": {
+            "auroc": 0.8850267379679144,
+            "average_precision": 0.8539688434857804
+          }
+        },
+        "splatreg": {
+          "outputs": 39,
+          "positives": 19,
+          "negatives": 20,
+          "internal_consensus": {
+            "auroc": 0.5,
+            "average_precision": 0.48717948717948717
+          },
+          "support_04": {
+            "auroc": 0.9,
+            "average_precision": 0.9195638133796025
+          },
+          "ratio_q95": {
+            "auroc": 0.7052631578947368,
+            "average_precision": 0.6043059623726155
+          }
+        }
+      },
+      "macro": {
+        "internal_consensus": {
+          "auroc": 0.8437481992357948,
+          "average_precision": 0.8384058764932235,
+          "defined_systems": 6
+        },
+        "support_04": {
+          "auroc": 0.9237270264279158,
+          "average_precision": 0.9432107973932741,
+          "defined_systems": 6
+        },
+        "ratio_q95": {
+          "auroc": 0.8553145705006574,
+          "average_precision": 0.8211259761660662,
+          "defined_systems": 6
+        }
+      },
+      "defined": 6
+    }
+  },
+  "selection_then_abstention": {
+    "scannet": {
+      "verifygs": {
+        "pairs": 41,
+        "accepted_correct": 10,
+        "pairs_with_successful_candidate": 18,
+        "selected_success": 15,
+        "accepted": 14,
+        "rejected_selected_success": 5,
+        "rejected_wrong_success_available": 2,
+        "accepted_all_failed": 3,
+        "rejected_all_failed": 20,
+        "accepted_wrong_success_available": 1,
+        "accepted_wrong": 4,
+        "accepted_risk": 0.2857142857142857,
+        "pair_coverage": 0.34146341463414637,
+        "correct_accept_rate_all_pairs": 0.24390243902439024,
+        "correct_accept_rate_solvable_pairs": 0.5555555555555556
+      },
+      "raw_support": {
+        "pairs": 41,
+        "accepted_correct": 11,
+        "pairs_with_successful_candidate": 18,
+        "selected_success": 15,
+        "accepted": 15,
+        "rejected_wrong_success_available": 2,
+        "rejected_all_failed": 20,
+        "accepted_all_failed": 3,
+        "rejected_selected_success": 4,
+        "accepted_wrong_success_available": 1,
+        "accepted_wrong": 4,
+        "accepted_risk": 0.26666666666666666,
+        "pair_coverage": 0.36585365853658536,
+        "correct_accept_rate_all_pairs": 0.2682926829268293,
+        "correct_accept_rate_solvable_pairs": 0.6111111111111112
+      },
+      "trimmed_distance": {
+        "pairs": 41,
+        "accepted_correct": 7,
+        "pairs_with_successful_candidate": 18,
+        "selected_success": 10,
+        "accepted": 20,
+        "rejected_selected_success": 3,
+        "accepted_wrong_success_available": 4,
+        "accepted_all_failed": 9,
+        "rejected_all_failed": 14,
+        "rejected_wrong_success_available": 4,
+        "accepted_wrong": 13,
+        "accepted_risk": 0.65,
+        "pair_coverage": 0.4878048780487805,
+        "correct_accept_rate_all_pairs": 0.17073170731707318,
+        "correct_accept_rate_solvable_pairs": 0.3888888888888889
+      }
+    },
+    "eth3d": {
+      "verifygs": {
+        "pairs": 19,
+        "rejected_selected_success": 2,
+        "pairs_with_successful_candidate": 18,
+        "selected_success": 16,
+        "accepted": 15,
+        "accepted_correct": 14,
+        "rejected_wrong_success_available": 1,
+        "accepted_wrong_success_available": 1,
+        "rejected_all_failed": 1,
+        "accepted_wrong": 1,
+        "accepted_risk": 0.06666666666666667,
+        "pair_coverage": 0.7894736842105263,
+        "correct_accept_rate_all_pairs": 0.7368421052631579,
+        "correct_accept_rate_solvable_pairs": 0.7777777777777778
+      },
+      "raw_support": {
+        "pairs": 19,
+        "accepted_correct": 16,
+        "pairs_with_successful_candidate": 18,
+        "selected_success": 16,
+        "accepted": 19,
+        "accepted_wrong_success_available": 2,
+        "accepted_all_failed": 1,
+        "accepted_wrong": 3,
+        "accepted_risk": 0.15789473684210525,
+        "pair_coverage": 1.0,
+        "correct_accept_rate_all_pairs": 0.8421052631578947,
+        "correct_accept_rate_solvable_pairs": 0.8888888888888888
+      },
+      "trimmed_distance": {
+        "pairs": 19,
+        "accepted_wrong_success_available": 1,
+        "pairs_with_successful_candidate": 18,
+        "selected_success": 16,
+        "accepted": 18,
+        "accepted_correct": 16,
+        "rejected_wrong_success_available": 1,
+        "accepted_all_failed": 1,
+        "accepted_wrong": 2,
+        "accepted_risk": 0.1111111111111111,
+        "pair_coverage": 0.9473684210526315,
+        "correct_accept_rate_all_pairs": 0.8421052631578947,
+        "correct_accept_rate_solvable_pairs": 0.8888888888888888
+      }
+    },
+    "bevgsreg": {
+      "verifygs": {
+        "pairs": 39,
+        "accepted_correct": 18,
+        "pairs_with_successful_candidate": 33,
+        "selected_success": 29,
+        "accepted": 19,
+        "rejected_selected_success": 11,
+        "rejected_all_failed": 6,
+        "rejected_wrong_success_available": 3,
+        "accepted_wrong_success_available": 1,
+        "accepted_wrong": 1,
+        "accepted_risk": 0.05263157894736842,
+        "pair_coverage": 0.48717948717948717,
+        "correct_accept_rate_all_pairs": 0.46153846153846156,
+        "correct_accept_rate_solvable_pairs": 0.5454545454545454
+      },
+      "raw_support": {
+        "pairs": 39,
+        "accepted_correct": 29,
+        "pairs_with_successful_candidate": 33,
+        "selected_success": 29,
+        "accepted": 38,
+        "rejected_all_failed": 1,
+        "accepted_wrong_success_available": 4,
+        "accepted_all_failed": 5,
+        "accepted_wrong": 9,
+        "accepted_risk": 0.23684210526315788,
+        "pair_coverage": 0.9743589743589743,
+        "correct_accept_rate_all_pairs": 0.7435897435897436,
+        "correct_accept_rate_solvable_pairs": 0.8787878787878788
+      },
+      "trimmed_distance": {
+        "pairs": 39,
+        "accepted_correct": 29,
+        "pairs_with_successful_candidate": 33,
+        "selected_success": 29,
+        "accepted": 39,
+        "accepted_all_failed": 6,
+        "accepted_wrong_success_available": 4,
+        "accepted_wrong": 10,
+        "accepted_risk": 0.2564102564102564,
+        "pair_coverage": 1.0,
+        "correct_accept_rate_all_pairs": 0.7435897435897436,
+        "correct_accept_rate_solvable_pairs": 0.8787878787878788
+      }
+    }
+  },
+  "native_paired_discrimination": {
+    "scannet_heldout": {
+      "outputs": 369,
+      "positives": 39,
+      "methods": [
+        "bufferx",
+        "cofinet",
+        "fcgf",
+        "fpfh_ransac",
+        "geotransformer",
+        "parenet",
+        "predator",
+        "randpcr",
+        "refreshreg"
+      ],
+      "scores": {
+        "internal_consensus": {
+          "auroc": 0.8288655788655789,
+          "average_precision": 0.5299634439419452
+        },
+        "native_solverwise_percentile": {
+          "auroc": 0.8177544677544678,
+          "average_precision": 0.37327222291555046
+        },
+        "negative_trimmed_distance": {
+          "auroc": 0.9133644133644134,
+          "average_precision": 0.6210834410473032
+        },
+        "support_04": {
+          "auroc": 0.9521756021756022,
+          "average_precision": 0.8053102393553541
+        },
+        "ratio_q95": {
+          "auroc": 0.9487179487179487,
+          "average_precision": 0.7442347138340979
+        }
+      }
+    },
+    "eth3d_common_native": {
+      "outputs": 166,
+      "positives": 54,
+      "methods": [
+        "bufferx",
+        "cofinet",
+        "fcgf",
+        "fpfh_ransac",
+        "geotransformer",
+        "parenet",
+        "predator",
+        "randpcr",
+        "refreshreg"
+      ],
+      "scores": {
+        "internal_consensus": {
+          "auroc": 0.802827380952381,
+          "average_precision": 0.704404668319744
+        },
+        "native_solverwise_percentile": {
+          "auroc": 0.7161871693121693,
+          "average_precision": 0.48027022651389484
+        },
+        "negative_trimmed_distance": {
+          "auroc": 0.8993055555555556,
+          "average_precision": 0.7900228753243314
+        },
+        "support_04": {
+          "auroc": 0.9732142857142857,
+          "average_precision": 0.8840126992324528
+        },
+        "ratio_q95": {
+          "auroc": 0.9730489417989419,
+          "average_precision": 0.9387105734706027
+        }
+      }
+    },
+    "bevgsreg_common_native": {
+      "outputs": 184,
+      "positives": 103,
+      "methods": [
+        "bufferx",
+        "cofinet",
+        "fpfh_ransac",
+        "geotransformer",
+        "parenet"
+      ],
+      "scores": {
+        "internal_consensus": {
+          "auroc": 0.8007311518638379,
+          "average_precision": 0.8168508440223856
+        },
+        "native_solverwise_percentile": {
+          "auroc": 0.8837947980342802,
+          "average_precision": 0.8802580702142355
+        },
+        "negative_trimmed_distance": {
+          "auroc": 0.9182548244036918,
+          "average_precision": 0.9395480994312562
+        },
+        "support_04": {
+          "auroc": 0.9388709097446961,
+          "average_precision": 0.9505205668117073
+        },
+        "ratio_q95": {
+          "auroc": 0.8897279156178832,
+          "average_precision": 0.8592775683252653
+        }
+      }
+    }
+  },
+  "matched_coverage": {
+    "eth3d_common": {
+      "support_04": {
+        "20pct": {
+          "accepted": 37,
+          "coverage": 0.2,
+          "correct": 34,
+          "wrong": 3,
+          "accepted_risk": 0.08108108108108109
+        },
+        "30pct": {
+          "accepted": 56,
+          "coverage": 0.3027027027027027,
+          "correct": 51,
+          "wrong": 5,
+          "accepted_risk": 0.08928571428571429
+        },
+        "40pct": {
+          "accepted": 74,
+          "coverage": 0.4,
+          "correct": 58,
+          "wrong": 16,
+          "accepted_risk": 0.21621621621621623
+        }
+      },
+      "ratio_q95": {
+        "20pct": {
+          "accepted": 37,
+          "coverage": 0.2,
+          "correct": 36,
+          "wrong": 1,
+          "accepted_risk": 0.02702702702702703
+        },
+        "30pct": {
+          "accepted": 56,
+          "coverage": 0.3027027027027027,
+          "correct": 49,
+          "wrong": 7,
+          "accepted_risk": 0.125
+        },
+        "40pct": {
+          "accepted": 74,
+          "coverage": 0.4,
+          "correct": 55,
+          "wrong": 19,
+          "accepted_risk": 0.25675675675675674
+        }
+      }
+    },
+    "bevgsreg_common": {
+      "support_04": {
+        "20pct": {
+          "accepted": 45,
+          "coverage": 0.20179372197309417,
+          "correct": 45,
+          "wrong": 0,
+          "accepted_risk": 0.0
+        },
+        "30pct": {
+          "accepted": 67,
+          "coverage": 0.3004484304932735,
+          "correct": 63,
+          "wrong": 4,
+          "accepted_risk": 0.05970149253731343
+        },
+        "40pct": {
+          "accepted": 89,
+          "coverage": 0.3991031390134529,
+          "correct": 83,
+          "wrong": 6,
+          "accepted_risk": 0.06741573033707865
+        }
+      },
+      "ratio_q95": {
+        "20pct": {
+          "accepted": 45,
+          "coverage": 0.20179372197309417,
+          "correct": 39,
+          "wrong": 6,
+          "accepted_risk": 0.13333333333333333
+        },
+        "30pct": {
+          "accepted": 67,
+          "coverage": 0.3004484304932735,
+          "correct": 56,
+          "wrong": 11,
+          "accepted_risk": 0.16417910447761194
+        },
+        "40pct": {
+          "accepted": 89,
+          "coverage": 0.3991031390134529,
+          "correct": 74,
+          "wrong": 15,
+          "accepted_risk": 0.16853932584269662
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "experiment": "public-solver risk transfer",
+  "common_public_methods": [
+    "bufferx",
+    "cofinet",
+    "fcgf",
+    "fpfh_ransac",
+    "geotransformer",
+    "parenet",
+    "predator",
+    "randpcr",
+    "refreshreg",
+    "splatreg"
+  ],
+  "scannet": {
+    "native_confidence_method_specific_thresholds": {
+      "outputs": 410,
+      "positives": 40,
+      "coverage": 0.12439024390243902,
+      "precision": 0.5098039215686274,
+      "recall": 0.65,
+      "false_acceptance_rate": 0.06756756756756757
+    },
+    "raw_support_single_threshold": {
+      "outputs": 410,
+      "positives": 40,
+      "coverage": 0.1073170731707317,
+      "precision": 0.6818181818181818,
+      "recall": 0.75,
+      "false_acceptance_rate": 0.03783783783783784
+    },
+    "verifygs_single_threshold": {
+      "outputs": 410,
+      "positives": 40,
+      "coverage": 0.1048780487804878,
+      "precision": 0.627906976744186,
+      "recall": 0.675,
+      "false_acceptance_rate": 0.043243243243243246
+    }
+  },
+  "eth3d_transfer_validation": {
+    "native_confidence_method_specific_thresholds": {
+      "outputs": 185,
+      "positives": 62,
+      "coverage": 0.2918918918918919,
+      "precision": 0.6111111111111112,
+      "recall": 0.532258064516129,
+      "false_acceptance_rate": 0.17073170731707318
+    },
+    "raw_support_single_threshold": {
+      "outputs": 185,
+      "positives": 62,
+      "coverage": 0.4864864864864865,
+      "precision": 0.6777777777777778,
+      "recall": 0.9838709677419355,
+      "false_acceptance_rate": 0.23577235772357724
+    },
+    "verifygs_single_threshold": {
+      "outputs": 185,
+      "positives": 62,
+      "coverage": 0.2918918918918919,
+      "precision": 0.9074074074074074,
+      "recall": 0.7903225806451613,
+      "false_acceptance_rate": 0.04065040650406504
+    }
+  },
+  "scene_and_solver_disjoint": {
+    "per_method": [
+      {
+        "held_out_method": "bufferx",
+        "threshold": 1.6370267453977079,
+        "outputs": 41,
+        "positives": 15,
+        "coverage": 0.3170731707317073,
+        "precision": 0.6923076923076923,
+        "recall": 0.6,
+        "false_acceptance_rate": 0.15384615384615385
+      },
+      {
+        "held_out_method": "cofinet",
+        "threshold": 1.6423497928914073,
+        "outputs": 41,
+        "positives": 4,
+        "coverage": 0.1951219512195122,
+        "precision": 0.375,
+        "recall": 0.75,
+        "false_acceptance_rate": 0.13513513513513514
+      },
+      {
+        "held_out_method": "fcgf",
+        "threshold": 1.6370267453977079,
+        "outputs": 41,
+        "positives": 5,
+        "coverage": 0.14634146341463414,
+        "precision": 0.6666666666666666,
+        "recall": 0.8,
+        "false_acceptance_rate": 0.05555555555555555
+      },
+      {
+        "held_out_method": "fpfh_ransac",
+        "threshold": 1.6370267453977079,
+        "outputs": 41,
+        "positives": 1,
+        "coverage": 0.07317073170731707,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "false_acceptance_rate": 0.05
+      },
+      {
+        "held_out_method": "geotransformer",
+        "threshold": 1.645119855872688,
+        "outputs": 41,
+        "positives": 8,
+        "coverage": 0.17073170731707318,
+        "precision": 0.8571428571428571,
+        "recall": 0.75,
+        "false_acceptance_rate": 0.030303030303030304
+      },
+      {
+        "held_out_method": "parenet",
+        "threshold": 1.6423497928914073,
+        "outputs": 41,
+        "positives": 5,
+        "coverage": 0.0975609756097561,
+        "precision": 1.0,
+        "recall": 0.8,
+        "false_acceptance_rate": 0.0
+      },
+      {
+        "held_out_method": "predator",
+        "threshold": 1.645119855872688,
+        "outputs": 41,
+        "positives": 0,
+        "coverage": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "false_acceptance_rate": 0.0
+      },
+      {
+        "held_out_method": "randpcr",
+        "threshold": 1.6423497928914073,
+        "outputs": 41,
+        "positives": 0,
+        "coverage": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "false_acceptance_rate": 0.0
+      },
+      {
+        "held_out_method": "refreshreg",
+        "threshold": 1.645119855872688,
+        "outputs": 41,
+        "positives": 1,
+        "coverage": 0.07317073170731707,
+        "precision": 0.3333333333333333,
+        "recall": 1.0,
+        "false_acceptance_rate": 0.05
+      },
+      {
+        "held_out_method": "splatreg",
+        "threshold": 1.645119855872688,
+        "outputs": 41,
+        "positives": 1,
+        "coverage": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "false_acceptance_rate": 0.0
+      }
+    ],
+    "pooled": {
+      "outputs": 410,
+      "positives": 40,
+      "coverage": 0.1073170731707317,
+      "precision": 0.6363636363636364,
+      "recall": 0.7,
+      "false_acceptance_rate": 0.043243243243243246
+    }
+  }
+}

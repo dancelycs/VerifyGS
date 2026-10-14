@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VERIFYGS — Complete Results</title>
+  <style>
+    :root { --ink:#172033; --muted:#617087; --line:#dce3ec; --paper:#fff;
+      --blue:#2563a9; --red:#b6202e; --green:#18856e; --wash:#f4f7fb; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--wash);
+      font:15px/1.58 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif; }
+    header { color:white; padding:54px 24px 46px;
+      background:linear-gradient(128deg,#111a2c,#263e68 60%,#8d2433); }
+    header .inner, main { max-width:1180px; margin:auto; }
+    h1 { margin:0 0 8px; font-size:clamp(32px,5vw,58px); letter-spacing:-1.5px; }
+    h2 { margin:0 0 15px; font-size:25px; }
+    h3 { margin:0 0 8px; font-size:18px; }
+    header p { max-width:780px; margin:0; color:#dce7f7; font-size:17px; }
+    main { padding:28px 18px 60px; }
+    section { background:var(--paper); border:1px solid var(--line); border-radius:16px;
+      padding:24px; margin:0 0 22px; box-shadow:0 6px 20px #1a2d4b0a; }
+    .metrics { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
+    .metric { padding:16px; border-radius:12px; background:#f6f8fb; border:1px solid var(--line); }
+    .metric strong { display:block; color:var(--red); font-size:27px; line-height:1.1; }
+    .metric span { color:var(--muted); font-size:13px; }
+    table { width:100%; border-collapse:collapse; font-variant-numeric:tabular-nums; }
+    th,td { padding:10px 9px; border-bottom:1px solid var(--line); text-align:right; }
+    th:first-child,td:first-child { text-align:left; }
+    th { color:#45546b; background:#f7f9fc; }
+    .ours { color:var(--red); font-weight:700; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    figure { margin:0; border:1px solid var(--line); border-radius:12px; overflow:hidden; background:white; }
+    figure.wide { grid-column:1/-1; }
+    figure img { display:block; width:100%; height:auto; background:white; }
+    figcaption { padding:10px 13px 13px; color:var(--muted); border-top:1px solid var(--line); }
+    code { background:#edf1f6; border-radius:5px; padding:2px 5px; }
+    a { color:var(--blue); }
+    .note { border-left:4px solid var(--green); padding:10px 14px; background:#f0faf7; }
+    footer { text-align:center; color:var(--muted); padding:8px 20px 40px; }
+    @media(max-width:760px) { .metrics,.grid { grid-template-columns:1fr; }
+      figure.wide { grid-column:auto; } section { padding:16px; } }
+  </style>
+</head>
+<body>
+<header><div class="inner">
+  <h1>VERIFYGS</h1>
+  <p>Complete paper-facing results for conformal and Gaussian-consistent verification
+  of 3D Gaussian map registration. All panels are displayed directly; no
+  downloads or expansion controls are required.</p>
+</div></header>
+<main>
+  <section>
+    <h2>Evaluation at a glance</h2>
+    <div class="metrics">
+      <div class="metric"><strong>.949</strong><span>paired ScanNet AUROC</span></div>
+      <div class="metric"><strong>.973</strong><span>paired ETH3D AUROC</span></div>
+      <div class="metric"><strong>2.44%</strong><span>ETH3D transferred FAR</span></div>
+      <div class="metric"><strong>7.92%</strong><span>BEVGSReg transferred FAR</span></div>
+    </div>
+    <p class="note">The failure-class conformal reference and Gaussian affinity
+    floor are calibrated only on the scene-disjoint ScanNet partition. ETH3D
+    and BEVGSReg are empirical cross-dataset evaluations; no cross-domain
+    finite-sample guarantee is claimed. Objaverse is retained as a transparent
+    object-centric limitation.</p>
+    <table>
+      <thead><tr><th>Data</th><th>Decision</th><th>Coverage</th><th>Precision</th><th>FAR</th><th>Recall</th></tr></thead>
+      <tbody>
+        <tr><td>ScanNet</td><td>Geometry only</td><td>10.24%</td><td>64.29%</td><td>4.05%</td><td>67.50%</td></tr>
+        <tr class="ours"><td>ScanNet</td><td>Full VERIFYGS</td><td>8.54%</td><td>74.29%</td><td>2.43%</td><td>65.00%</td></tr>
+        <tr><td>ETH3D</td><td>Geometry only</td><td>29.19%</td><td>90.74%</td><td>4.07%</td><td>79.03%</td></tr>
+        <tr class="ours"><td>ETH3D</td><td>Full VERIFYGS</td><td>26.49%</td><td>93.88%</td><td>2.44%</td><td>74.19%</td></tr>
+        <tr><td>BEVGSReg</td><td>Geometry only</td><td>28.70%</td><td>82.81%</td><td>10.89%</td><td>43.44%</td></tr>
+        <tr class="ours"><td>BEVGSReg</td><td>Full VERIFYGS</td><td>26.91%</td><td>86.67%</td><td>7.92%</td><td>42.62%</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Paired failure discrimination</h2>
+    <table>
+      <thead><tr><th>Score</th><th>ScanNet AUROC</th><th>ScanNet AP</th><th>ETH3D AUROC</th><th>ETH3D AP</th></tr></thead>
+      <tbody>
+        <tr><td>Pipeline consensus</td><td>.829</td><td>.530</td><td>.803</td><td>.704</td></tr>
+        <tr><td>Negative trimmed Chamfer</td><td>.913</td><td>.621</td><td>.899</td><td>.790</td></tr>
+        <tr><td>Bidirectional support</td><td>.952</td><td>.805</td><td>.973</td><td>.884</td></tr>
+        <tr class="ours"><td>VERIFYGS</td><td>.949</td><td>.744</td><td>.973</td><td>.939</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Full-dataset candidate outcomes</h2>
+    <p>Cells report strict/relaxed registration successes over every evaluated
+    map pair for which the corresponding public method produced an output.</p>
+    <table>
+      <thead><tr><th>Pipeline or selector</th><th>ScanNet</th><th>ETH3D</th><th>BEVGSReg</th></tr></thead>
+      <tbody>
+        <tr><td>BUFFER-X</td><td>7/15</td><td>9/15</td><td>13/26</td></tr>
+        <tr><td>CAST</td><td>--</td><td>1/2</td><td>12/23</td></tr>
+        <tr><td>CoFiNet</td><td>2/4</td><td>11/15</td><td>26/29</td></tr>
+        <tr><td>FCGF</td><td>1/5</td><td>1/6</td><td>--</td></tr>
+        <tr><td>FPFH+RANSAC</td><td>0/1</td><td>0/0</td><td>5/6</td></tr>
+        <tr><td>GeoTransformer</td><td>3/8</td><td>3/9</td><td>18/25</td></tr>
+        <tr><td>ICP</td><td>--</td><td>2/2</td><td>10/15</td></tr>
+        <tr><td>PARE-Net</td><td>3/5</td><td>3/5</td><td>15/17</td></tr>
+        <tr><td>PREDATOR</td><td>0/0</td><td>0/0</td><td>--</td></tr>
+        <tr><td>RandPCR</td><td>0/0</td><td>0/0</td><td>--</td></tr>
+        <tr><td>RefreshReg (reproduced)</td><td>1/1</td><td>2/4</td><td>--</td></tr>
+        <tr><td>SplatReg</td><td>0/1</td><td>3/8</td><td>7/19</td></tr>
+        <tr class="ours"><td>VERIFYGS selection</td><td>8/15</td><td>13/16</td><td>24/29</td></tr>
+        <tr><td>Oracle upper bound</td><td>8/18</td><td>14/18</td><td>27/33</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Quantitative analyses</h2>
+    <div class="grid">
+      <figure><img src="assets/solver_gains.png" alt="Per-pipeline discrimination"><figcaption>Per-pipeline AUROC and average-precision comparison.</figcaption></figure>
+      <figure><img src="assets/risk_coverage.png" alt="Risk coverage"><figcaption>Cross-dataset selective risk over the full coverage range.</figcaption></figure>
+      <figure class="wide"><img src="assets/gaussian_gate_gain.png" alt="Gaussian gate contribution"><figcaption>Gaussian-consistency gating lowers false acceptance across repeated scene-disjoint calibrations and improves the fixed selective operating point.</figcaption></figure>
+      <figure><img src="assets/candidate_selection.png" alt="Candidate complementarity"><figcaption>Pair-level complementarity and support-based selection.</figcaption></figure>
+      <figure><img src="assets/roc_pr.png" alt="ROC and PR curves"><figcaption>Zero-shot receiver-operating and precision--recall curves.</figcaption></figure>
+      <figure><img src="assets/null_count.png" alt="Null count ablation"><figcaption>Effect of the number of map-pair-conditioned null similarities.</figcaption></figure>
+      <figure><img src="assets/controlled_perturbations.png" alt="Controlled perturbations"><figcaption>Score response to controlled rotation, translation, and scale errors.</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Qualitative registration decisions</h2>
+    <div class="grid">
+      <figure class="wide"><img src="assets/public_comparison.png" alt="Same-scene public comparison"><figcaption>Same-scene comparison of public candidates and VERIFYGS selection. Blue is transformed source; orange is target.</figcaption></figure>
+      <figure><img src="assets/qualitative_decisions.png" alt="Accepted and rejected examples"><figcaption>Mechanically selected correct acceptances and correctly rejected failures.</figcaption></figure>
+      <figure><img src="assets/scene_rendered_alignment.png" alt="Rendered Gaussian scene alignment"><figcaption>Rendered 3D Gaussian scene alignment examples.</figcaption></figure>
+      <figure class="wide"><img src="assets/scene_rendered_results.png" alt="Controlled complete-scene rendering"><figcaption>Controlled complete-map 3DGS illustration under a common target camera.</figcaption></figure>
+    </div>
+  </section>
+
+  <section>
+    <h2>Reproduce locally</h2>
+    <p>Clone the repository, install the evaluation dependencies, and run
+    <code>python reproduce.py</code>. The command reconstructs quantitative
+    tables and figures from per-candidate records, then verifies all expected
+    pool sizes. See the <a href="https://github.com/dancelycs/VerifyGS">repository README</a> for score
+    recomputation from prepared Gaussian-map pairs.</p>
+  </section>
+</main>
+<footer>VERIFYGS reproducibility artifact · final paper records only</footer>
+</body>
+</html>

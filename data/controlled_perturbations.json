@@ -1,0 +1,1667 @@
+{
+  "experiment": "controlled Sim3 perturbation response",
+  "ground_truth_used_only_to_generate_controlled_perturbations": true,
+  "pair_count": 12,
+  "pairs": [
+    "scannet_test_scene0707_00",
+    "scannet_test_scene0708_00",
+    "scannet_test_scene0715_00",
+    "scannet_test_scene0717_00",
+    "scannet_test_scene0721_00",
+    "scannet_test_scene0722_00",
+    "scannet_test_scene0724_00",
+    "scannet_test_scene0727_00",
+    "scannet_test_scene0731_00",
+    "scannet_test_scene0733_00",
+    "scannet_test_scene0734_00",
+    "scannet_test_scene0742_00"
+  ],
+  "summary": {
+    "rotation_deg": [
+      {
+        "level": 0,
+        "mean": 1.5976031406106843,
+        "median": 1.687547869858597,
+        "std": 0.29522844380876356
+      },
+      {
+        "level": 2,
+        "mean": 1.5965316171285713,
+        "median": 1.6825164907594732,
+        "std": 0.29032526098360373
+      },
+      {
+        "level": 5,
+        "mean": 1.5748153960358477,
+        "median": 1.6214234651511816,
+        "std": 0.2795940149477385
+      },
+      {
+        "level": 10,
+        "mean": 1.4748530537464977,
+        "median": 1.5360039507031191,
+        "std": 0.278772795549437
+      },
+      {
+        "level": 15,
+        "mean": 1.3584438440876763,
+        "median": 1.460885873762391,
+        "std": 0.28576851356478655
+      },
+      {
+        "level": 30,
+        "mean": 1.0587056125951246,
+        "median": 1.1460926108844591,
+        "std": 0.27666308964668423
+      },
+      {
+        "level": 60,
+        "mean": 0.7692357460383662,
+        "median": 0.7889668051587199,
+        "std": 0.23842086423812567
+      }
+    ],
+    "translation_extent": [
+      {
+        "level": 0,
+        "mean": 1.5976031406106843,
+        "median": 1.687547869858597,
+        "std": 0.29522844380876356
+      },
+      {
+        "level": 0.01,
+        "mean": 1.5943152683004653,
+        "median": 1.681622842505273,
+        "std": 0.29389340423101823
+      },
+      {
+        "level": 0.02,
+        "mean": 1.581498646352958,
+        "median": 1.6592183207920495,
+        "std": 0.2911721285571418
+      },
+      {
+        "level": 0.04,
+        "mean": 1.505420550225386,
+        "median": 1.5589827106110694,
+        "std": 0.2766304598665281
+      },
+      {
+        "level": 0.08,
+        "mean": 1.1664493884717346,
+        "median": 1.16794637046267,
+        "std": 0.20494412281826482
+      },
+      {
+        "level": 0.16,
+        "mean": 0.7491498961396186,
+        "median": 0.7652052191619205,
+        "std": 0.1561055164604978
+      },
+      {
+        "level": 0.32,
+        "mean": 0.38237774384994183,
+        "median": 0.3983878462674256,
+        "std": 0.10542051787236316
+      }
+    ],
+    "scale_percent": [
+      {
+        "level": 0,
+        "mean": 1.5976031406106843,
+        "median": 1.687547869858597,
+        "std": 0.29522844380876356
+      },
+      {
+        "level": 2,
+        "mean": 1.5946677696472669,
+        "median": 1.681238853855756,
+        "std": 0.2938119163278759
+      },
+      {
+        "level": 5,
+        "mean": 1.5827007058713563,
+        "median": 1.6514470113375193,
+        "std": 0.2949434108498942
+      },
+      {
+        "level": 10,
+        "mean": 1.5182044744051328,
+        "median": 1.5648305802773912,
+        "std": 0.29235086729774357
+      },
+      {
+        "level": 20,
+        "mean": 1.3005953055459178,
+        "median": 1.3472162531540381,
+        "std": 0.32283581018300417
+      },
+      {
+        "level": 40,
+        "mean": 0.9460851592191736,
+        "median": 1.0284450516661214,
+        "std": 0.34960167522870444
+      },
+      {
+        "level": 60,
+        "mean": 0.767468738511044,
+        "median": 0.8061205209883441,
+        "std": 0.34620092196531155
+      }
+    ]
+  },
+  "rows": [
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "rotation_deg",
+      "level": 0,
+      "score": 1.9651286003275217
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "rotation_deg",
+      "level": 2,
+      "score": 1.9492876943989559
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "rotation_deg",
+      "level": 5,
+      "score": 1.9036915732802455
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "rotation_deg",
+      "level": 10,
+      "score": 1.6813837245394903
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "rotation_deg",
+      "level": 15,
+      "score": 1.4819809695062565
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "rotation_deg",
+      "level": 30,
+      "score": 0.9492769910841389
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "rotation_deg",
+      "level": 60,
+      "score": 0.519110768605037
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "translation_extent",
+      "level": 0,
+      "score": 1.9651286003275217
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "translation_extent",
+      "level": 0.01,
+      "score": 1.9522311059735207
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "translation_extent",
+      "level": 0.02,
+      "score": 1.9353733851373776
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "translation_extent",
+      "level": 0.04,
+      "score": 1.8385083860471594
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "translation_extent",
+      "level": 0.08,
+      "score": 1.32239454559077
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "translation_extent",
+      "level": 0.16,
+      "score": 0.7367091588264888
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "translation_extent",
+      "level": 0.32,
+      "score": 0.3741878859882906
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "scale_percent",
+      "level": 0,
+      "score": 1.9651286003275217
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "scale_percent",
+      "level": 2,
+      "score": 1.9511607744918606
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "scale_percent",
+      "level": 5,
+      "score": 1.9306104100439911
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "scale_percent",
+      "level": 10,
+      "score": 1.8198311016921946
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "scale_percent",
+      "level": 20,
+      "score": 1.1763478149182804
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "scale_percent",
+      "level": 40,
+      "score": 0.5813505442635586
+    },
+    {
+      "pair": "scannet_test_scene0707_00",
+      "type": "scale_percent",
+      "level": 60,
+      "score": 0.45018142118614146
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "rotation_deg",
+      "level": 0,
+      "score": 0.9136544311120235
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "rotation_deg",
+      "level": 2,
+      "score": 0.923980318609613
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "rotation_deg",
+      "level": 5,
+      "score": 0.9252244014406479
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "rotation_deg",
+      "level": 10,
+      "score": 0.8244536921268218
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "rotation_deg",
+      "level": 15,
+      "score": 0.6547607939736627
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "rotation_deg",
+      "level": 30,
+      "score": 0.391264050360473
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "rotation_deg",
+      "level": 60,
+      "score": 0.22107351907489994
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "translation_extent",
+      "level": 0,
+      "score": 0.9136544311120235
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "translation_extent",
+      "level": 0.01,
+      "score": 0.9122237358563333
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "translation_extent",
+      "level": 0.02,
+      "score": 0.8998451116875361
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "translation_extent",
+      "level": 0.04,
+      "score": 0.8332244760856179
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "translation_extent",
+      "level": 0.08,
+      "score": 0.6025715192117491
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "translation_extent",
+      "level": 0.16,
+      "score": 0.35151560390890824
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "translation_extent",
+      "level": 0.32,
+      "score": 0.20801064934903368
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "scale_percent",
+      "level": 0,
+      "score": 0.9136544311120235
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "scale_percent",
+      "level": 2,
+      "score": 0.9144008808106444
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "scale_percent",
+      "level": 5,
+      "score": 0.8875286916602908
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "scale_percent",
+      "level": 10,
+      "score": 0.8091514733050926
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "scale_percent",
+      "level": 20,
+      "score": 0.43947226006307505
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "scale_percent",
+      "level": 40,
+      "score": 0.1836266258607498
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "type": "scale_percent",
+      "level": 60,
+      "score": 0.09741168567003192
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "rotation_deg",
+      "level": 0,
+      "score": 1.7037697608431295
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "rotation_deg",
+      "level": 2,
+      "score": 1.7084177813808952
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "rotation_deg",
+      "level": 5,
+      "score": 1.69631130928253
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "rotation_deg",
+      "level": 10,
+      "score": 1.6353465747871916
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "rotation_deg",
+      "level": 15,
+      "score": 1.4966626131603842
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "rotation_deg",
+      "level": 30,
+      "score": 1.176057289555466
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "rotation_deg",
+      "level": 60,
+      "score": 0.7456289690582357
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "translation_extent",
+      "level": 0,
+      "score": 1.70376976084313
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "translation_extent",
+      "level": 0.01,
+      "score": 1.7009593298202954
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "translation_extent",
+      "level": 0.02,
+      "score": 1.6940413457640868
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "translation_extent",
+      "level": 0.04,
+      "score": 1.6210782326712614
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "translation_extent",
+      "level": 0.08,
+      "score": 1.1980543169841917
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "translation_extent",
+      "level": 0.16,
+      "score": 0.6721794352114582
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "translation_extent",
+      "level": 0.32,
+      "score": 0.404539927036887
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "scale_percent",
+      "level": 0,
+      "score": 1.7037697608431297
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "scale_percent",
+      "level": 2,
+      "score": 1.702148358329956
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "scale_percent",
+      "level": 5,
+      "score": 1.6951763275233085
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "scale_percent",
+      "level": 10,
+      "score": 1.658856911228213
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "scale_percent",
+      "level": 20,
+      "score": 1.529468990676936
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "scale_percent",
+      "level": 40,
+      "score": 1.2342115930279696
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "type": "scale_percent",
+      "level": 60,
+      "score": 1.1539521686258618
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "rotation_deg",
+      "level": 0,
+      "score": 1.453846852810987
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "rotation_deg",
+      "level": 2,
+      "score": 1.4542795453267043
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "rotation_deg",
+      "level": 5,
+      "score": 1.429616071930804
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "rotation_deg",
+      "level": 10,
+      "score": 1.363241040019731
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "rotation_deg",
+      "level": 15,
+      "score": 1.3012794717689766
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "rotation_deg",
+      "level": 30,
+      "score": 1.158058249066466
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "rotation_deg",
+      "level": 60,
+      "score": 0.867029262994838
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "translation_extent",
+      "level": 0,
+      "score": 1.453846852810987
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "translation_extent",
+      "level": 0.01,
+      "score": 1.447096849565793
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "translation_extent",
+      "level": 0.02,
+      "score": 1.4361929981697108
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "translation_extent",
+      "level": 0.04,
+      "score": 1.38318816499431
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "translation_extent",
+      "level": 0.08,
+      "score": 1.0998611057024545
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "translation_extent",
+      "level": 0.16,
+      "score": 0.704509954091324
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "translation_extent",
+      "level": 0.32,
+      "score": 0.3922357654979642
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "scale_percent",
+      "level": 0,
+      "score": 1.453846852810987
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "scale_percent",
+      "level": 2,
+      "score": 1.4459285797733559
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "scale_percent",
+      "level": 5,
+      "score": 1.4351545361319884
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "scale_percent",
+      "level": 10,
+      "score": 1.3607746926801407
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "scale_percent",
+      "level": 20,
+      "score": 1.11452938198528
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "scale_percent",
+      "level": 40,
+      "score": 0.8515388709321494
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "type": "scale_percent",
+      "level": 60,
+      "score": 0.6583849319158327
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "rotation_deg",
+      "level": 0,
+      "score": 1.998532252991658
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "rotation_deg",
+      "level": 2,
+      "score": 2.0040238234310337
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "rotation_deg",
+      "level": 5,
+      "score": 1.9975337856390443
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "rotation_deg",
+      "level": 10,
+      "score": 1.9471111843320503
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "rotation_deg",
+      "level": 15,
+      "score": 1.8335854463398682
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "rotation_deg",
+      "level": 30,
+      "score": 1.4562646337871368
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "rotation_deg",
+      "level": 60,
+      "score": 1.096217306434623
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "translation_extent",
+      "level": 0,
+      "score": 1.998532252991658
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "translation_extent",
+      "level": 0.01,
+      "score": 1.9990814100355954
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "translation_extent",
+      "level": 0.02,
+      "score": 1.9831059323937754
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "translation_extent",
+      "level": 0.04,
+      "score": 1.8811124923242826
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "translation_extent",
+      "level": 0.08,
+      "score": 1.3135836490986337
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "translation_extent",
+      "level": 0.16,
+      "score": 0.909503911495854
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "translation_extent",
+      "level": 0.32,
+      "score": 0.476418697299645
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "scale_percent",
+      "level": 0,
+      "score": 1.998532252991658
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "scale_percent",
+      "level": 2,
+      "score": 2.0010783447408227
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "scale_percent",
+      "level": 5,
+      "score": 1.9949377705222484
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "scale_percent",
+      "level": 10,
+      "score": 1.962138117988887
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "scale_percent",
+      "level": 20,
+      "score": 1.7815153739010618
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "scale_percent",
+      "level": 40,
+      "score": 1.1732989860564036
+    },
+    {
+      "pair": "scannet_test_scene0721_00",
+      "type": "scale_percent",
+      "level": 60,
+      "score": 0.7495993649747638
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "rotation_deg",
+      "level": 0,
+      "score": 1.2352094659417974
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "rotation_deg",
+      "level": 2,
+      "score": 1.2399175638702344
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "rotation_deg",
+      "level": 5,
+      "score": 1.2511992324912058
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "rotation_deg",
+      "level": 10,
+      "score": 1.2287247272856483
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "rotation_deg",
+      "level": 15,
+      "score": 1.1780016345094697
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "rotation_deg",
+      "level": 30,
+      "score": 0.9616956259105285
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "rotation_deg",
+      "level": 60,
+      "score": 0.7587144227694277
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "translation_extent",
+      "level": 0,
+      "score": 1.2352094659417974
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "translation_extent",
+      "level": 0.01,
+      "score": 1.2346764737234839
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "translation_extent",
+      "level": 0.02,
+      "score": 1.232189176704687
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "translation_extent",
+      "level": 0.04,
+      "score": 1.1896830472941764
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "translation_extent",
+      "level": 0.08,
+      "score": 1.0076662047400775
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "translation_extent",
+      "level": 0.16,
+      "score": 0.7339747006360376
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "translation_extent",
+      "level": 0.32,
+      "score": 0.45930604413175574
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "scale_percent",
+      "level": 0,
+      "score": 1.2352094659417974
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "scale_percent",
+      "level": 2,
+      "score": 1.2356092101055327
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "scale_percent",
+      "level": 5,
+      "score": 1.2361422023238462
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "scale_percent",
+      "level": 10,
+      "score": 1.2141562733184097
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "scale_percent",
+      "level": 20,
+      "score": 1.151796183775717
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "scale_percent",
+      "level": 40,
+      "score": 0.9844366272252427
+    },
+    {
+      "pair": "scannet_test_scene0722_00",
+      "type": "scale_percent",
+      "level": 60,
+      "score": 0.8377305191344206
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "rotation_deg",
+      "level": 0,
+      "score": 1.6713259788740646
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "rotation_deg",
+      "level": 2,
+      "score": 1.6680895703946745
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "rotation_deg",
+      "level": 5,
+      "score": 1.6457695119161213
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "rotation_deg",
+      "level": 10,
+      "score": 1.574345324784751
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "rotation_deg",
+      "level": 15,
+      "score": 1.4778110718650084
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "rotation_deg",
+      "level": 30,
+      "score": 1.2319556277237445
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "rotation_deg",
+      "level": 60,
+      "score": 1.00987104586214
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "translation_extent",
+      "level": 0,
+      "score": 1.6713259788740642
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "translation_extent",
+      "level": 0.01,
+      "score": 1.6622863551902505
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "translation_extent",
+      "level": 0.02,
+      "score": 1.636450887501325
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "translation_extent",
+      "level": 0.04,
+      "score": 1.5206655841438304
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "translation_extent",
+      "level": 0.08,
+      "score": 1.1368163784589116
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "translation_extent",
+      "level": 0.16,
+      "score": 0.7937012794973523
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "translation_extent",
+      "level": 0.32,
+      "score": 0.5249677754155716
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "scale_percent",
+      "level": 0,
+      "score": 1.6713259788740644
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "scale_percent",
+      "level": 2,
+      "score": 1.6688149722952272
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "scale_percent",
+      "level": 5,
+      "score": 1.6599427490500025
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "scale_percent",
+      "level": 10,
+      "score": 1.6219428494902655
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "scale_percent",
+      "level": 20,
+      "score": 1.5486214573882182
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "scale_percent",
+      "level": 40,
+      "score": 1.331503088538092
+    },
+    {
+      "pair": "scannet_test_scene0724_00",
+      "type": "scale_percent",
+      "level": 60,
+      "score": 1.146358203458493
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "rotation_deg",
+      "level": 0,
+      "score": 1.7672508616264577
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "rotation_deg",
+      "level": 2,
+      "score": 1.7733128009581776
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "rotation_deg",
+      "level": 5,
+      "score": 1.754442570457823
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "rotation_deg",
+      "level": 10,
+      "score": 1.6854146806482364
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "rotation_deg",
+      "level": 15,
+      "score": 1.5677935029698615
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "rotation_deg",
+      "level": 30,
+      "score": 1.2630343917283862
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "rotation_deg",
+      "level": 60,
+      "score": 0.7906919899293591
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "translation_extent",
+      "level": 0,
+      "score": 1.7672508616264577
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "translation_extent",
+      "level": 0.01,
+      "score": 1.772481728630442
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "translation_extent",
+      "level": 0.02,
+      "score": 1.7574246535161695
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "translation_extent",
+      "level": 0.04,
+      "score": 1.6789127618488917
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "translation_extent",
+      "level": 0.08,
+      "score": 1.3819755078096356
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "translation_extent",
+      "level": 0.16,
+      "score": 0.9726479430959888
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "translation_extent",
+      "level": 0.32,
+      "score": 0.46569382317714064
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "scale_percent",
+      "level": 0,
+      "score": 1.7672508616264577
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "scale_percent",
+      "level": 2,
+      "score": 1.770624037544915
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "scale_percent",
+      "level": 5,
+      "score": 1.7666642223362912
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "scale_percent",
+      "level": 10,
+      "score": 1.6997873432573147
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "scale_percent",
+      "level": 20,
+      "score": 1.4179071643323313
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "scale_percent",
+      "level": 40,
+      "score": 1.0140060130527244
+    },
+    {
+      "pair": "scannet_test_scene0727_00",
+      "type": "scale_percent",
+      "level": 60,
+      "score": 0.7745105228422675
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "rotation_deg",
+      "level": 0,
+      "score": 1.5614202120262306
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "rotation_deg",
+      "level": 2,
+      "score": 1.557569079686347
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "rotation_deg",
+      "level": 5,
+      "score": 1.5488683732888315
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "rotation_deg",
+      "level": 10,
+      "score": 1.4976625766214873
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "rotation_deg",
+      "level": 15,
+      "score": 1.443960675659774
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "rotation_deg",
+      "level": 30,
+      "score": 1.234359232198319
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "rotation_deg",
+      "level": 60,
+      "score": 0.9885999351012883
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "translation_extent",
+      "level": 0,
+      "score": 1.5614202120262306
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "translation_extent",
+      "level": 0.01,
+      "score": 1.559352011325182
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "translation_extent",
+      "level": 0.02,
+      "score": 1.5531830678548129
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "translation_extent",
+      "level": 0.04,
+      "score": 1.5036532269279732
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "translation_extent",
+      "level": 0.08,
+      "score": 1.316944625709161
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "translation_extent",
+      "level": 0.16,
+      "score": 0.884655020557202
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "translation_extent",
+      "level": 0.32,
+      "score": 0.22382923793935894
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "scale_percent",
+      "level": 0,
+      "score": 1.5614202120262306
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "scale_percent",
+      "level": 2,
+      "score": 1.5619550915178813
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "scale_percent",
+      "level": 5,
+      "score": 1.5528621401598222
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "scale_percent",
+      "level": 10,
+      "score": 1.5077183110645171
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "scale_percent",
+      "level": 20,
+      "score": 1.4079097979225281
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "scale_percent",
+      "level": 40,
+      "score": 1.2936595385059748
+    },
+    {
+      "pair": "scannet_test_scene0731_00",
+      "type": "scale_percent",
+      "level": 60,
+      "score": 1.2270135538463185
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "rotation_deg",
+      "level": 0,
+      "score": 1.7131799756451536
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "rotation_deg",
+      "level": 2,
+      "score": 1.6969434111242716
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "rotation_deg",
+      "level": 5,
+      "score": 1.5970774183862417
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "rotation_deg",
+      "level": 10,
+      "score": 1.2376488120061613
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "rotation_deg",
+      "level": 15,
+      "score": 1.041141897565072
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "rotation_deg",
+      "level": 30,
+      "score": 0.6579144911338352
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "rotation_deg",
+      "level": 60,
+      "score": 0.5101172702553924
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "translation_extent",
+      "level": 0,
+      "score": 1.7131799756451536
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "translation_extent",
+      "level": 0.01,
+      "score": 1.7030043204830942
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "translation_extent",
+      "level": 0.02,
+      "score": 1.6819857540827738
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "translation_extent",
+      "level": 0.04,
+      "score": 1.5972998370783085
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "translation_extent",
+      "level": 0.08,
+      "score": 1.1378384239411483
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "translation_extent",
+      "level": 0.16,
+      "score": 0.6027546555012485
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "translation_extent",
+      "level": 0.32,
+      "score": 0.22247429673989808
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "scale_percent",
+      "level": 0,
+      "score": 1.7131799756451536
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "scale_percent",
+      "level": 2,
+      "score": 1.693662735416285
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "scale_percent",
+      "level": 5,
+      "score": 1.642951273625036
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "scale_percent",
+      "level": 10,
+      "score": 1.4808080471082794
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "scale_percent",
+      "level": 20,
+      "score": 1.211069778304169
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "scale_percent",
+      "level": 40,
+      "score": 0.4455602448829801
+    },
+    {
+      "pair": "scannet_test_scene0733_00",
+      "type": "scale_percent",
+      "level": 60,
+      "score": 0.22102857524146338
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "rotation_deg",
+      "level": 0,
+      "score": 1.781226158430379
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "rotation_deg",
+      "level": 2,
+      "score": 1.765487723540956
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "rotation_deg",
+      "level": 5,
+      "score": 1.732475396699727
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "rotation_deg",
+      "level": 10,
+      "score": 1.6367012624336035
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "rotation_deg",
+      "level": 15,
+      "score": 1.5043640568694912
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "rotation_deg",
+      "level": 30,
+      "score": 1.1341269727024523
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "rotation_deg",
+      "level": 60,
+      "score": 0.9365328419870734
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "translation_extent",
+      "level": 0,
+      "score": 1.781226158430379
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "translation_extent",
+      "level": 0.01,
+      "score": 1.7779153291396164
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "translation_extent",
+      "level": 0.02,
+      "score": 1.7651038592753603
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "translation_extent",
+      "level": 0.04,
+      "score": 1.6630439476601075
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "translation_extent",
+      "level": 0.08,
+      "score": 1.357919839544737
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "translation_extent",
+      "level": 0.16,
+      "score": 0.8239166630679392
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "translation_extent",
+      "level": 0.32,
+      "score": 0.35944090169715986
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "scale_percent",
+      "level": 0,
+      "score": 1.781226158430379
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "scale_percent",
+      "level": 2,
+      "score": 1.7836732931235513
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "scale_percent",
+      "level": 5,
+      "score": 1.7829535476255596
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "scale_percent",
+      "level": 10,
+      "score": 1.7020541536512688
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "scale_percent",
+      "level": 20,
+      "score": 1.5419827548978682
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "scale_percent",
+      "level": 40,
+      "score": 1.2169456880047216
+    },
+    {
+      "pair": "scannet_test_scene0734_00",
+      "type": "scale_percent",
+      "level": 60,
+      "score": 0.9938245836272295
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "rotation_deg",
+      "level": 0,
+      "score": 1.4066931366988091
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "rotation_deg",
+      "level": 2,
+      "score": 1.4170700928209932
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "rotation_deg",
+      "level": 5,
+      "score": 1.4155751076169498
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "rotation_deg",
+      "level": 10,
+      "score": 1.3862030453728014
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "rotation_deg",
+      "level": 15,
+      "score": 1.3199839948642864
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "rotation_deg",
+      "level": 30,
+      "score": 1.0904597958905498
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "rotation_deg",
+      "level": 60,
+      "score": 0.7872416203880807
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "translation_extent",
+      "level": 0,
+      "score": 1.4066931366988091
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "translation_extent",
+      "level": 0.01,
+      "score": 1.4104745698619778
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "translation_extent",
+      "level": 0.02,
+      "score": 1.4030875841478807
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "translation_extent",
+      "level": 0.04,
+      "score": 1.3546764456287075
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "translation_extent",
+      "level": 0.08,
+      "score": 1.1217665448693428
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "translation_extent",
+      "level": 0.16,
+      "score": 0.8037304277856192
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "translation_extent",
+      "level": 0.32,
+      "score": 0.4774279219265963
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "scale_percent",
+      "level": 0,
+      "score": 1.4066931366988091
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "scale_percent",
+      "level": 2,
+      "score": 1.4069569576171697
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "scale_percent",
+      "level": 5,
+      "score": 1.407484599453891
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "scale_percent",
+      "level": 10,
+      "score": 1.3812344180770095
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "scale_percent",
+      "level": 20,
+      "score": 1.2865227083855482
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "scale_percent",
+      "level": 40,
+      "score": 1.0428840902795184
+    },
+    {
+      "pair": "scannet_test_scene0742_00",
+      "type": "scale_percent",
+      "level": 60,
+      "score": 0.8996293316097035
+    }
+  ]
+}

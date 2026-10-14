@@ -1,0 +1,60 @@
+{
+  "experiment": "paired improvement over available solver-internal confidence",
+  "iterations": 2000,
+  "scannet_output_count": 369,
+  "eth3d_output_count": 166,
+  "excluded_constant_native_score": [
+    "splatreg"
+  ],
+  "paired_methods": [
+    "bufferx",
+    "cofinet",
+    "fcgf",
+    "fpfh_ransac",
+    "geotransformer",
+    "parenet",
+    "predator",
+    "randpcr",
+    "refreshreg"
+  ],
+  "scannet_heldout": {
+    "auroc_difference": {
+      "point": 0.1198523698523698,
+      "bootstrap_95": [
+        0.030553102319955335,
+        0.11932081290439506,
+        0.19113204822388474
+      ],
+      "probability_improvement_positive": 0.992
+    },
+    "ap_difference": {
+      "point": 0.21427126989215273,
+      "bootstrap_95": [
+        -0.03267266331764281,
+        0.2088218187447347,
+        0.380549014688118
+      ],
+      "probability_improvement_positive": 0.9555
+    }
+  },
+  "eth3d_transfer_validation": {
+    "auroc_difference": {
+      "point": 0.17022156084656082,
+      "bootstrap_95": [
+        0.11210391756601037,
+        0.17168980502850956,
+        0.23067985357033036
+      ],
+      "probability_improvement_positive": 1.0
+    },
+    "ap_difference": {
+      "point": 0.2343059051508587,
+      "bootstrap_95": [
+        0.1451127677060873,
+        0.2278960761572318,
+        0.31622334189595486
+      ],
+      "probability_improvement_positive": 1.0
+    }
+  }
+}

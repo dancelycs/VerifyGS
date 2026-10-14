@@ -1,0 +1,66 @@
+{
+  "experiment": "VerifyGS CPU runtime",
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+  "python": "3.10.21",
+  "pairs": 10,
+  "gaussians_per_map": 4500,
+  "null_count": 64,
+  "candidate_seconds_median": 0.029732796945609152,
+  "candidate_seconds_mean": 0.03299172308761626,
+  "null_seconds_median": 0.4780623000115156,
+  "null_seconds_mean": 0.4778498443076387,
+  "amortized_one_candidate_seconds_median": 0.5034432950196788,
+  "peak_process_rss_mb": 325.4765625,
+  "rows": [
+    {
+      "pair": "scannet_test_scene0707_00",
+      "candidate_seconds": 0.027105093002319336,
+      "null_seconds": 0.29503292602021247
+    },
+    {
+      "pair": "scannet_test_scene0708_00",
+      "candidate_seconds": 0.024065749952569604,
+      "null_seconds": 0.5547625879989937
+    },
+    {
+      "pair": "scannet_test_scene0709_00",
+      "candidate_seconds": 0.023182088043540716,
+      "null_seconds": 0.4639451369876042
+    },
+    {
+      "pair": "scannet_test_scene0713_00",
+      "candidate_seconds": 0.03236050088889897,
+      "null_seconds": 0.5271186289610341
+    },
+    {
+      "pair": "scannet_test_scene0714_00",
+      "candidate_seconds": 0.024389590020291507,
+      "null_seconds": 0.4879513350315392
+    },
+    {
+      "pair": "scannet_test_scene0715_00",
+      "candidate_seconds": 0.05817132000811398,
+      "null_seconds": 0.42413824098184705
+    },
+    {
+      "pair": "scannet_test_scene0716_00",
+      "candidate_seconds": 0.03457253100350499,
+      "null_seconds": 0.6786159659968689
+    },
+    {
+      "pair": "scannet_test_scene0717_00",
+      "candidate_seconds": 0.0263723999960348,
+      "null_seconds": 0.46817326499149203
+    },
+    {
+      "pair": "scannet_test_scene0718_00",
+      "candidate_seconds": 0.034246991970576346,
+      "null_seconds": 0.514538899064064
+    },
+    {
+      "pair": "scannet_test_scene0719_00",
+      "candidate_seconds": 0.0454509659903124,
+      "null_seconds": 0.36422145704273134
+    }
+  ]
+}

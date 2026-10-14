@@ -1,0 +1,1355 @@
+{
+  "experiment": "finite-sample geometry gate with Gaussian-consistency veto",
+  "candidate_transformations_changed": false,
+  "calibration": {
+    "geometric_rule": "split-conformal failure-class p-value; accept when p <= alpha",
+    "alpha": 0.05,
+    "finite_sample_scope": "marginal false acceptance under exchangeability with the scene-disjoint ScanNet failure calibration population",
+    "cross_domain_guarantee_claimed": false,
+    "gaussian_rule": "require covariance-color affinity at or above the specified quantile of successful calibration candidates",
+    "affinity_quantile": 0.05,
+    "decision": "p_geo <= alpha and affinity >= affinity_floor"
+  },
+  "fixed_split": {
+    "scannet_heldout": {
+      "calibration_failures": 373,
+      "calibration_successes": 37,
+      "affinity_floor": 0.40597476141096306,
+      "geometry_only": {
+        "outputs": 410,
+        "positives": 40,
+        "accepted": 42,
+        "true_accepts": 27,
+        "false_accepts": 15,
+        "coverage": 0.1024390243902439,
+        "precision": 0.6428571428571429,
+        "recall": 0.675,
+        "false_acceptance_rate": 0.04054054054054054,
+        "false_acceptance_rate_upper_95": 0.06174018061093869
+      },
+      "geometry_and_gaussian": {
+        "outputs": 410,
+        "positives": 40,
+        "accepted": 35,
+        "true_accepts": 26,
+        "false_accepts": 9,
+        "coverage": 0.08536585365853659,
+        "precision": 0.7428571428571429,
+        "recall": 0.65,
+        "false_acceptance_rate": 0.024324324324324326,
+        "false_acceptance_rate_upper_95": 0.04206212323371024
+      }
+    },
+    "eth3d_transfer": {
+      "calibration_failures": 373,
+      "calibration_successes": 37,
+      "affinity_floor": 0.40597476141096306,
+      "geometry_only": {
+        "outputs": 185,
+        "positives": 62,
+        "accepted": 54,
+        "true_accepts": 49,
+        "false_accepts": 5,
+        "coverage": 0.2918918918918919,
+        "precision": 0.9074074074074074,
+        "recall": 0.7903225806451613,
+        "false_acceptance_rate": 0.04065040650406504,
+        "false_acceptance_rate_upper_95": 0.08356765562756502
+      },
+      "geometry_and_gaussian": {
+        "outputs": 185,
+        "positives": 62,
+        "accepted": 49,
+        "true_accepts": 46,
+        "false_accepts": 3,
+        "coverage": 0.2648648648648649,
+        "precision": 0.9387755102040817,
+        "recall": 0.7419354838709677,
+        "false_acceptance_rate": 0.024390243902439025,
+        "false_acceptance_rate_upper_95": 0.06182895497800855
+      }
+    },
+    "bevgsreg_transfer": {
+      "calibration_failures": 373,
+      "calibration_successes": 37,
+      "affinity_floor": 0.40597476141096306,
+      "geometry_only": {
+        "outputs": 223,
+        "positives": 122,
+        "accepted": 64,
+        "true_accepts": 53,
+        "false_accepts": 11,
+        "coverage": 0.28699551569506726,
+        "precision": 0.828125,
+        "recall": 0.4344262295081967,
+        "false_acceptance_rate": 0.10891089108910891,
+        "false_acceptance_rate_upper_95": 0.17382973236712354
+      },
+      "geometry_and_gaussian": {
+        "outputs": 223,
+        "positives": 122,
+        "accepted": 60,
+        "true_accepts": 52,
+        "false_accepts": 8,
+        "coverage": 0.26905829596412556,
+        "precision": 0.8666666666666667,
+        "recall": 0.4262295081967213,
+        "false_acceptance_rate": 0.07920792079207921,
+        "false_acceptance_rate_upper_95": 0.13837903652985845
+      }
+    }
+  },
+  "selection_then_acceptance": {
+    "scannet_heldout": {
+      "pairs": 41,
+      "affinity_floor": 0.40597476141096306,
+      "pairs_with_successful_candidate": 18,
+      "selected_success": 15,
+      "accepted": 11,
+      "accepted_correct": 9,
+      "rejected_selected_success": 6,
+      "rejected_wrong_success_available": 3,
+      "rejected_all_failed": 21,
+      "accepted_all_failed": 2,
+      "accepted_wrong_success_available": 0,
+      "accepted_wrong": 2,
+      "coverage": 0.2682926829268293,
+      "accepted_risk": 0.18181818181818182,
+      "correct_accept_rate_solvable": 0.5
+    },
+    "eth3d_transfer": {
+      "pairs": 19,
+      "affinity_floor": 0.40597476141096306,
+      "pairs_with_successful_candidate": 18,
+      "selected_success": 16,
+      "accepted": 15,
+      "rejected_selected_success": 2,
+      "accepted_correct": 14,
+      "rejected_wrong_success_available": 1,
+      "accepted_wrong_success_available": 1,
+      "rejected_all_failed": 1,
+      "accepted_all_failed": 0,
+      "accepted_wrong": 1,
+      "coverage": 0.7894736842105263,
+      "accepted_risk": 0.06666666666666667,
+      "correct_accept_rate_solvable": 0.7777777777777778
+    },
+    "bevgsreg_transfer": {
+      "pairs": 39,
+      "affinity_floor": 0.40597476141096306,
+      "pairs_with_successful_candidate": 33,
+      "selected_success": 30,
+      "accepted": 18,
+      "accepted_correct": 18,
+      "rejected_selected_success": 12,
+      "rejected_all_failed": 6,
+      "rejected_wrong_success_available": 3,
+      "accepted_wrong_success_available": 0,
+      "accepted_all_failed": 0,
+      "accepted_wrong": 0,
+      "coverage": 0.46153846153846156,
+      "accepted_risk": 0.0,
+      "correct_accept_rate_solvable": 0.5454545454545454
+    }
+  },
+  "scene_and_pipeline_disjoint": {
+    "per_method": [
+      {
+        "held_out_method": "bufferx",
+        "affinity_floor": 0.4132056918920342,
+        "outputs": 41,
+        "positives": 15,
+        "accepted": 10,
+        "true_accepts": 7,
+        "false_accepts": 3,
+        "coverage": 0.24390243902439024,
+        "precision": 0.7,
+        "recall": 0.4666666666666667,
+        "false_acceptance_rate": 0.11538461538461539,
+        "false_acceptance_rate_upper_95": 0.27190195515553406
+      },
+      {
+        "held_out_method": "cofinet",
+        "affinity_floor": 0.40597476141096306,
+        "outputs": 41,
+        "positives": 4,
+        "accepted": 6,
+        "true_accepts": 3,
+        "false_accepts": 3,
+        "coverage": 0.14634146341463414,
+        "precision": 0.5,
+        "recall": 0.75,
+        "false_acceptance_rate": 0.08108108108108109,
+        "false_acceptance_rate_upper_95": 0.19642893982446616
+      },
+      {
+        "held_out_method": "fcgf",
+        "affinity_floor": 0.40597476141096306,
+        "outputs": 41,
+        "positives": 5,
+        "accepted": 4,
+        "true_accepts": 4,
+        "false_accepts": 0,
+        "coverage": 0.0975609756097561,
+        "precision": 1.0,
+        "recall": 0.8,
+        "false_acceptance_rate": 0.0,
+        "false_acceptance_rate_upper_95": 0.07984650951989439
+      },
+      {
+        "held_out_method": "fpfh_ransac",
+        "affinity_floor": 0.4132056918920342,
+        "outputs": 41,
+        "positives": 1,
+        "accepted": 2,
+        "true_accepts": 1,
+        "false_accepts": 1,
+        "coverage": 0.04878048780487805,
+        "precision": 0.5,
+        "recall": 1.0,
+        "false_acceptance_rate": 0.025,
+        "false_acceptance_rate_upper_95": 0.11318836094473754
+      },
+      {
+        "held_out_method": "geotransformer",
+        "affinity_floor": 0.40597476141096306,
+        "outputs": 41,
+        "positives": 8,
+        "accepted": 7,
+        "true_accepts": 6,
+        "false_accepts": 1,
+        "coverage": 0.17073170731707318,
+        "precision": 0.8571428571428571,
+        "recall": 0.75,
+        "false_acceptance_rate": 0.030303030303030304,
+        "false_acceptance_rate_upper_95": 0.13585064679854747
+      },
+      {
+        "held_out_method": "parenet",
+        "affinity_floor": 0.40597476141096306,
+        "outputs": 41,
+        "positives": 5,
+        "accepted": 4,
+        "true_accepts": 4,
+        "false_accepts": 0,
+        "coverage": 0.0975609756097561,
+        "precision": 1.0,
+        "recall": 0.8,
+        "false_acceptance_rate": 0.0,
+        "false_acceptance_rate_upper_95": 0.07984650951989439
+      },
+      {
+        "held_out_method": "predator",
+        "affinity_floor": 0.40597476141096306,
+        "outputs": 41,
+        "positives": 0,
+        "accepted": 0,
+        "true_accepts": 0,
+        "false_accepts": 0,
+        "coverage": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "false_acceptance_rate": 0.0,
+        "false_acceptance_rate_upper_95": 0.07046111727016406
+      },
+      {
+        "held_out_method": "randpcr",
+        "affinity_floor": 0.40597476141096306,
+        "outputs": 41,
+        "positives": 0,
+        "accepted": 0,
+        "true_accepts": 0,
+        "false_accepts": 0,
+        "coverage": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "false_acceptance_rate": 0.0,
+        "false_acceptance_rate_upper_95": 0.07046111727016406
+      },
+      {
+        "held_out_method": "refreshreg",
+        "affinity_floor": 0.40597476141096306,
+        "outputs": 41,
+        "positives": 1,
+        "accepted": 2,
+        "true_accepts": 1,
+        "false_accepts": 1,
+        "coverage": 0.04878048780487805,
+        "precision": 0.5,
+        "recall": 1.0,
+        "false_acceptance_rate": 0.025,
+        "false_acceptance_rate_upper_95": 0.11318836094473754
+      },
+      {
+        "held_out_method": "splatreg",
+        "affinity_floor": 0.40597476141096306,
+        "outputs": 41,
+        "positives": 1,
+        "accepted": 0,
+        "true_accepts": 0,
+        "false_accepts": 0,
+        "coverage": 0.0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "false_acceptance_rate": 0.0,
+        "false_acceptance_rate_upper_95": 0.07215752450551455
+      }
+    ],
+    "pooled": {
+      "outputs": 410,
+      "positives": 40,
+      "accepted": 35,
+      "true_accepts": 26,
+      "false_accepts": 9,
+      "coverage": 0.08536585365853659,
+      "precision": 0.7428571428571429,
+      "recall": 0.65,
+      "false_acceptance_rate": 0.024324324324324326,
+      "false_acceptance_rate_upper_95": 0.04206212323371024
+    }
+  },
+  "repeated_scene_disjoint_splits": {
+    "count": 10,
+    "aggregate": {
+      "bevgsreg_transfer": {
+        "geometry_only": {
+          "coverage": {
+            "mean": 0.30358744394618836,
+            "std": 0.0716100113531264,
+            "minimum": 0.19282511210762332,
+            "maximum": 0.452914798206278
+          },
+          "precision": {
+            "mean": 0.8478152117817285,
+            "std": 0.014504302865201848,
+            "minimum": 0.828125,
+            "maximum": 0.88
+          },
+          "recall": {
+            "mean": 0.4696721311475409,
+            "std": 0.10837355147590273,
+            "minimum": 0.30327868852459017,
+            "maximum": 0.6967213114754098
+          },
+          "false_acceptance_rate": {
+            "mean": 0.10297029702970298,
+            "std": 0.028421188305757076,
+            "minimum": 0.0594059405940594,
+            "maximum": 0.15841584158415842
+          }
+        },
+        "geometry_and_gaussian": {
+          "coverage": {
+            "mean": 0.2896860986547085,
+            "std": 0.06223982627048421,
+            "minimum": 0.19282511210762332,
+            "maximum": 0.4304932735426009
+          },
+          "precision": {
+            "mean": 0.869199694764961,
+            "std": 0.015594057902231513,
+            "minimum": 0.84375,
+            "maximum": 0.8888888888888888
+          },
+          "recall": {
+            "mean": 0.46065573770491797,
+            "std": 0.10077634681510612,
+            "minimum": 0.30327868852459017,
+            "maximum": 0.680327868852459
+          },
+          "false_acceptance_rate": {
+            "mean": 0.08316831683168316,
+            "std": 0.018889885176573185,
+            "minimum": 0.0594059405940594,
+            "maximum": 0.12871287128712872
+          }
+        }
+      },
+      "eth3d_transfer": {
+        "geometry_only": {
+          "coverage": {
+            "mean": 0.285945945945946,
+            "std": 0.022214835230307588,
+            "minimum": 0.23783783783783785,
+            "maximum": 0.32432432432432434
+          },
+          "precision": {
+            "mean": 0.91989349534363,
+            "std": 0.04267052159494058,
+            "minimum": 0.85,
+            "maximum": 0.98
+          },
+          "recall": {
+            "mean": 0.7822580645161289,
+            "std": 0.03164744656507835,
+            "minimum": 0.6935483870967742,
+            "maximum": 0.8225806451612904
+          },
+          "false_acceptance_rate": {
+            "mean": 0.03577235772357723,
+            "std": 0.02063183339910491,
+            "minimum": 0.008130081300813009,
+            "maximum": 0.07317073170731707
+          }
+        },
+        "geometry_and_gaussian": {
+          "coverage": {
+            "mean": 0.26270270270270274,
+            "std": 0.013284546732372442,
+            "minimum": 0.23243243243243245,
+            "maximum": 0.2810810810810811
+          },
+          "precision": {
+            "mean": 0.9454991622500636,
+            "std": 0.023764930945616162,
+            "minimum": 0.9038461538461539,
+            "maximum": 0.9787234042553191
+          },
+          "recall": {
+            "mean": 0.7403225806451614,
+            "std": 0.023317471443227364,
+            "minimum": 0.6774193548387096,
+            "maximum": 0.7741935483870968
+          },
+          "false_acceptance_rate": {
+            "mean": 0.02195121951219512,
+            "std": 0.010315916699552456,
+            "minimum": 0.008130081300813009,
+            "maximum": 0.04065040650406504
+          }
+        }
+      },
+      "scannet_heldout": {
+        "geometry_only": {
+          "coverage": {
+            "mean": 0.10317073170731708,
+            "std": 0.027638569813657834,
+            "minimum": 0.05121951219512195,
+            "maximum": 0.15121951219512195
+          },
+          "precision": {
+            "mean": 0.5986378783002844,
+            "std": 0.12162737634145931,
+            "minimum": 0.3870967741935484,
+            "maximum": 0.8095238095238095
+          },
+          "recall": {
+            "mean": 0.659909011352163,
+            "std": 0.10626329535681683,
+            "minimum": 0.4473684210526316,
+            "maximum": 0.8095238095238095
+          },
+          "false_acceptance_rate": {
+            "mean": 0.04837211119084338,
+            "std": 0.02409598258660604,
+            "minimum": 0.010752688172043012,
+            "maximum": 0.1
+          }
+        },
+        "geometry_and_gaussian": {
+          "coverage": {
+            "mean": 0.08243902439024389,
+            "std": 0.018823201347877794,
+            "minimum": 0.04390243902439024,
+            "maximum": 0.10975609756097561
+          },
+          "precision": {
+            "mean": 0.7231295831340667,
+            "std": 0.1183928814652363,
+            "minimum": 0.5,
+            "maximum": 0.9444444444444444
+          },
+          "recall": {
+            "mean": 0.6478864602598444,
+            "std": 0.09636339269653403,
+            "minimum": 0.4473684210526316,
+            "maximum": 0.8095238095238095
+          },
+          "false_acceptance_rate": {
+            "mean": 0.02671292906565813,
+            "std": 0.014285854901939682,
+            "minimum": 0.002688172043010753,
+            "maximum": 0.05789473684210526
+          }
+        }
+      },
+      "affinity_floor": {
+        "mean": 0.3684708379154529,
+        "minimum": 0.3159075387585436,
+        "maximum": 0.4132056918920342
+      }
+    },
+    "records": [
+      {
+        "split": 0,
+        "dataset": "scannet_heldout",
+        "affinity_floor": 0.3159075387585436,
+        "geometry_only": {
+          "outputs": 410,
+          "positives": 42,
+          "accepted": 51,
+          "true_accepts": 34,
+          "false_accepts": 17,
+          "coverage": 0.12439024390243902,
+          "precision": 0.6666666666666666,
+          "recall": 0.8095238095238095,
+          "false_acceptance_rate": 0.04619565217391304,
+          "false_acceptance_rate_upper_95": 0.06848875242227506
+        },
+        "geometry_and_gaussian": {
+          "outputs": 410,
+          "positives": 42,
+          "accepted": 45,
+          "true_accepts": 34,
+          "false_accepts": 11,
+          "coverage": 0.10975609756097561,
+          "precision": 0.7555555555555555,
+          "recall": 0.8095238095238095,
+          "false_acceptance_rate": 0.029891304347826088,
+          "false_acceptance_rate_upper_95": 0.048992275286099084
+        }
+      },
+      {
+        "split": 0,
+        "dataset": "eth3d_transfer",
+        "affinity_floor": 0.3159075387585436,
+        "geometry_only": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 54,
+          "true_accepts": 49,
+          "false_accepts": 5,
+          "coverage": 0.2918918918918919,
+          "precision": 0.9074074074074074,
+          "recall": 0.7903225806451613,
+          "false_acceptance_rate": 0.04065040650406504,
+          "false_acceptance_rate_upper_95": 0.08356765562756502
+        },
+        "geometry_and_gaussian": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 52,
+          "true_accepts": 48,
+          "false_accepts": 4,
+          "coverage": 0.2810810810810811,
+          "precision": 0.9230769230769231,
+          "recall": 0.7741935483870968,
+          "false_acceptance_rate": 0.032520325203252036,
+          "false_acceptance_rate_upper_95": 0.0728704492877641
+        }
+      },
+      {
+        "split": 0,
+        "dataset": "bevgsreg_transfer",
+        "affinity_floor": 0.3159075387585436,
+        "geometry_only": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 65,
+          "true_accepts": 54,
+          "false_accepts": 11,
+          "coverage": 0.2914798206278027,
+          "precision": 0.8307692307692308,
+          "recall": 0.4426229508196721,
+          "false_acceptance_rate": 0.10891089108910891,
+          "false_acceptance_rate_upper_95": 0.17382973236712354
+        },
+        "geometry_and_gaussian": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 64,
+          "true_accepts": 54,
+          "false_accepts": 10,
+          "coverage": 0.28699551569506726,
+          "precision": 0.84375,
+          "recall": 0.4426229508196721,
+          "false_acceptance_rate": 0.09900990099009901,
+          "false_acceptance_rate_upper_95": 0.16215457187317905
+        }
+      },
+      {
+        "split": 1,
+        "dataset": "scannet_heldout",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 410,
+          "positives": 39,
+          "accepted": 29,
+          "true_accepts": 21,
+          "false_accepts": 8,
+          "coverage": 0.07073170731707316,
+          "precision": 0.7241379310344828,
+          "recall": 0.5384615384615384,
+          "false_acceptance_rate": 0.0215633423180593,
+          "false_acceptance_rate_upper_95": 0.03857031705793562
+        },
+        "geometry_and_gaussian": {
+          "outputs": 410,
+          "positives": 39,
+          "accepted": 27,
+          "true_accepts": 21,
+          "false_accepts": 6,
+          "coverage": 0.06585365853658537,
+          "precision": 0.7777777777777778,
+          "recall": 0.5384615384615384,
+          "false_acceptance_rate": 0.016172506738544475,
+          "false_acceptance_rate_upper_95": 0.03166928450053324
+        }
+      },
+      {
+        "split": 1,
+        "dataset": "eth3d_transfer",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 49,
+          "true_accepts": 48,
+          "false_accepts": 1,
+          "coverage": 0.2648648648648649,
+          "precision": 0.9795918367346939,
+          "recall": 0.7741935483870968,
+          "false_acceptance_rate": 0.008130081300813009,
+          "false_acceptance_rate_upper_95": 0.03798598259961325
+        },
+        "geometry_and_gaussian": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 47,
+          "true_accepts": 46,
+          "false_accepts": 1,
+          "coverage": 0.25405405405405407,
+          "precision": 0.9787234042553191,
+          "recall": 0.7419354838709677,
+          "false_acceptance_rate": 0.008130081300813009,
+          "false_acceptance_rate_upper_95": 0.03798598259961325
+        }
+      },
+      {
+        "split": 1,
+        "dataset": "bevgsreg_transfer",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 50,
+          "true_accepts": 44,
+          "false_accepts": 6,
+          "coverage": 0.2242152466367713,
+          "precision": 0.88,
+          "recall": 0.36065573770491804,
+          "false_acceptance_rate": 0.0594059405940594,
+          "false_acceptance_rate_upper_95": 0.11388030321507024
+        },
+        "geometry_and_gaussian": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 50,
+          "true_accepts": 44,
+          "false_accepts": 6,
+          "coverage": 0.2242152466367713,
+          "precision": 0.88,
+          "recall": 0.36065573770491804,
+          "false_acceptance_rate": 0.0594059405940594,
+          "false_acceptance_rate_upper_95": 0.11388030321507024
+        }
+      },
+      {
+        "split": 2,
+        "dataset": "scannet_heldout",
+        "affinity_floor": 0.400746821068442,
+        "geometry_only": {
+          "outputs": 410,
+          "positives": 43,
+          "accepted": 54,
+          "true_accepts": 30,
+          "false_accepts": 24,
+          "coverage": 0.13170731707317074,
+          "precision": 0.5555555555555556,
+          "recall": 0.6976744186046512,
+          "false_acceptance_rate": 0.0653950953678474,
+          "false_acceptance_rate_upper_95": 0.09073828247316458
+        },
+        "geometry_and_gaussian": {
+          "outputs": 410,
+          "positives": 43,
+          "accepted": 41,
+          "true_accepts": 29,
+          "false_accepts": 12,
+          "coverage": 0.1,
+          "precision": 0.7073170731707317,
+          "recall": 0.6744186046511628,
+          "false_acceptance_rate": 0.0326975476839237,
+          "false_acceptance_rate_upper_95": 0.05243945528621563
+        }
+      },
+      {
+        "split": 2,
+        "dataset": "eth3d_transfer",
+        "affinity_floor": 0.400746821068442,
+        "geometry_only": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 55,
+          "true_accepts": 49,
+          "false_accepts": 6,
+          "coverage": 0.2972972972972973,
+          "precision": 0.8909090909090909,
+          "recall": 0.7903225806451613,
+          "false_acceptance_rate": 0.04878048780487805,
+          "false_acceptance_rate_upper_95": 0.09400423320523969
+        },
+        "geometry_and_gaussian": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 49,
+          "true_accepts": 46,
+          "false_accepts": 3,
+          "coverage": 0.2648648648648649,
+          "precision": 0.9387755102040817,
+          "recall": 0.7419354838709677,
+          "false_acceptance_rate": 0.024390243902439025,
+          "false_acceptance_rate_upper_95": 0.06182895497800855
+        }
+      },
+      {
+        "split": 2,
+        "dataset": "bevgsreg_transfer",
+        "affinity_floor": 0.400746821068442,
+        "geometry_only": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 79,
+          "true_accepts": 67,
+          "false_accepts": 12,
+          "coverage": 0.3542600896860987,
+          "precision": 0.8481012658227848,
+          "recall": 0.5491803278688525,
+          "false_acceptance_rate": 0.1188118811881188,
+          "false_acceptance_rate_upper_95": 0.185384448319555
+        },
+        "geometry_and_gaussian": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 72,
+          "true_accepts": 64,
+          "false_accepts": 8,
+          "coverage": 0.32286995515695066,
+          "precision": 0.8888888888888888,
+          "recall": 0.5245901639344263,
+          "false_acceptance_rate": 0.07920792079207921,
+          "false_acceptance_rate_upper_95": 0.13837903652985845
+        }
+      },
+      {
+        "split": 3,
+        "dataset": "scannet_heldout",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 410,
+          "positives": 33,
+          "accepted": 38,
+          "true_accepts": 24,
+          "false_accepts": 14,
+          "coverage": 0.09268292682926829,
+          "precision": 0.631578947368421,
+          "recall": 0.7272727272727273,
+          "false_acceptance_rate": 0.03713527851458886,
+          "false_acceptance_rate_upper_95": 0.05744614107277219
+        },
+        "geometry_and_gaussian": {
+          "outputs": 410,
+          "positives": 33,
+          "accepted": 34,
+          "true_accepts": 23,
+          "false_accepts": 11,
+          "coverage": 0.08292682926829269,
+          "precision": 0.6764705882352942,
+          "recall": 0.696969696969697,
+          "false_acceptance_rate": 0.029177718832891247,
+          "false_acceptance_rate_upper_95": 0.04783399636680638
+        }
+      },
+      {
+        "split": 3,
+        "dataset": "eth3d_transfer",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 53,
+          "true_accepts": 49,
+          "false_accepts": 4,
+          "coverage": 0.2864864864864865,
+          "precision": 0.9245283018867925,
+          "recall": 0.7903225806451613,
+          "false_acceptance_rate": 0.032520325203252036,
+          "false_acceptance_rate_upper_95": 0.0728704492877641
+        },
+        "geometry_and_gaussian": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 49,
+          "true_accepts": 46,
+          "false_accepts": 3,
+          "coverage": 0.2648648648648649,
+          "precision": 0.9387755102040817,
+          "recall": 0.7419354838709677,
+          "false_acceptance_rate": 0.024390243902439025,
+          "false_acceptance_rate_upper_95": 0.06182895497800855
+        }
+      },
+      {
+        "split": 3,
+        "dataset": "bevgsreg_transfer",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 64,
+          "true_accepts": 53,
+          "false_accepts": 11,
+          "coverage": 0.28699551569506726,
+          "precision": 0.828125,
+          "recall": 0.4344262295081967,
+          "false_acceptance_rate": 0.10891089108910891,
+          "false_acceptance_rate_upper_95": 0.17382973236712354
+        },
+        "geometry_and_gaussian": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 62,
+          "true_accepts": 53,
+          "false_accepts": 9,
+          "coverage": 0.27802690582959644,
+          "precision": 0.8548387096774194,
+          "recall": 0.4344262295081967,
+          "false_acceptance_rate": 0.0891089108910891,
+          "false_acceptance_rate_upper_95": 0.15034397570763627
+        }
+      },
+      {
+        "split": 4,
+        "dataset": "scannet_heldout",
+        "affinity_floor": 0.39378196635180956,
+        "geometry_only": {
+          "outputs": 410,
+          "positives": 35,
+          "accepted": 41,
+          "true_accepts": 23,
+          "false_accepts": 18,
+          "coverage": 0.1,
+          "precision": 0.5609756097560976,
+          "recall": 0.6571428571428571,
+          "false_acceptance_rate": 0.048,
+          "false_acceptance_rate_upper_95": 0.07035027878129384
+        },
+        "geometry_and_gaussian": {
+          "outputs": 410,
+          "positives": 35,
+          "accepted": 32,
+          "true_accepts": 23,
+          "false_accepts": 9,
+          "coverage": 0.07804878048780488,
+          "precision": 0.71875,
+          "recall": 0.6571428571428571,
+          "false_acceptance_rate": 0.024,
+          "false_acceptance_rate_upper_95": 0.04150634952118486
+        }
+      },
+      {
+        "split": 4,
+        "dataset": "eth3d_transfer",
+        "affinity_floor": 0.39378196635180956,
+        "geometry_only": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 54,
+          "true_accepts": 49,
+          "false_accepts": 5,
+          "coverage": 0.2918918918918919,
+          "precision": 0.9074074074074074,
+          "recall": 0.7903225806451613,
+          "false_acceptance_rate": 0.04065040650406504,
+          "false_acceptance_rate_upper_95": 0.08356765562756502
+        },
+        "geometry_and_gaussian": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 49,
+          "true_accepts": 46,
+          "false_accepts": 3,
+          "coverage": 0.2648648648648649,
+          "precision": 0.9387755102040817,
+          "recall": 0.7419354838709677,
+          "false_acceptance_rate": 0.024390243902439025,
+          "false_acceptance_rate_upper_95": 0.06182895497800855
+        }
+      },
+      {
+        "split": 4,
+        "dataset": "bevgsreg_transfer",
+        "affinity_floor": 0.39378196635180956,
+        "geometry_only": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 67,
+          "true_accepts": 56,
+          "false_accepts": 11,
+          "coverage": 0.3004484304932735,
+          "precision": 0.835820895522388,
+          "recall": 0.45901639344262296,
+          "false_acceptance_rate": 0.10891089108910891,
+          "false_acceptance_rate_upper_95": 0.17382973236712354
+        },
+        "geometry_and_gaussian": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 63,
+          "true_accepts": 55,
+          "false_accepts": 8,
+          "coverage": 0.2825112107623318,
+          "precision": 0.873015873015873,
+          "recall": 0.45081967213114754,
+          "false_acceptance_rate": 0.07920792079207921,
+          "false_acceptance_rate_upper_95": 0.13837903652985845
+        }
+      },
+      {
+        "split": 5,
+        "dataset": "scannet_heldout",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 410,
+          "positives": 30,
+          "accepted": 62,
+          "true_accepts": 24,
+          "false_accepts": 38,
+          "coverage": 0.15121951219512195,
+          "precision": 0.3870967741935484,
+          "recall": 0.8,
+          "false_acceptance_rate": 0.1,
+          "false_acceptance_rate_upper_95": 0.1290096803292298
+        },
+        "geometry_and_gaussian": {
+          "outputs": 410,
+          "positives": 30,
+          "accepted": 44,
+          "true_accepts": 22,
+          "false_accepts": 22,
+          "coverage": 0.1073170731707317,
+          "precision": 0.5,
+          "recall": 0.7333333333333333,
+          "false_acceptance_rate": 0.05789473684210526,
+          "false_acceptance_rate_upper_95": 0.08164088149192378
+        }
+      },
+      {
+        "split": 5,
+        "dataset": "eth3d_transfer",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 60,
+          "true_accepts": 51,
+          "false_accepts": 9,
+          "coverage": 0.32432432432432434,
+          "precision": 0.85,
+          "recall": 0.8225806451612904,
+          "false_acceptance_rate": 0.07317073170731707,
+          "false_acceptance_rate_upper_95": 0.12420926337165504
+        },
+        "geometry_and_gaussian": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 52,
+          "true_accepts": 47,
+          "false_accepts": 5,
+          "coverage": 0.2810810810810811,
+          "precision": 0.9038461538461539,
+          "recall": 0.7580645161290323,
+          "false_acceptance_rate": 0.04065040650406504,
+          "false_acceptance_rate_upper_95": 0.08356765562756502
+        }
+      },
+      {
+        "split": 5,
+        "dataset": "bevgsreg_transfer",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 101,
+          "true_accepts": 85,
+          "false_accepts": 16,
+          "coverage": 0.452914798206278,
+          "precision": 0.8415841584158416,
+          "recall": 0.6967213114754098,
+          "false_acceptance_rate": 0.15841584158415842,
+          "false_acceptance_rate_upper_95": 0.23061193060524293
+        },
+        "geometry_and_gaussian": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 96,
+          "true_accepts": 83,
+          "false_accepts": 13,
+          "coverage": 0.4304932735426009,
+          "precision": 0.8645833333333334,
+          "recall": 0.680327868852459,
+          "false_acceptance_rate": 0.12871287128712872,
+          "false_acceptance_rate_upper_95": 0.1968308450855157
+        }
+      },
+      {
+        "split": 6,
+        "dataset": "scannet_heldout",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 410,
+          "positives": 41,
+          "accepted": 38,
+          "true_accepts": 26,
+          "false_accepts": 12,
+          "coverage": 0.09268292682926829,
+          "precision": 0.6842105263157895,
+          "recall": 0.6341463414634146,
+          "false_acceptance_rate": 0.032520325203252036,
+          "false_acceptance_rate_upper_95": 0.05215813079987453
+        },
+        "geometry_and_gaussian": {
+          "outputs": 410,
+          "positives": 41,
+          "accepted": 30,
+          "true_accepts": 26,
+          "false_accepts": 4,
+          "coverage": 0.07317073170731707,
+          "precision": 0.8666666666666667,
+          "recall": 0.6341463414634146,
+          "false_acceptance_rate": 0.01084010840108401,
+          "false_acceptance_rate_upper_95": 0.02463345635653606
+        }
+      },
+      {
+        "split": 6,
+        "dataset": "eth3d_transfer",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 50,
+          "true_accepts": 49,
+          "false_accepts": 1,
+          "coverage": 0.2702702702702703,
+          "precision": 0.98,
+          "recall": 0.7903225806451613,
+          "false_acceptance_rate": 0.008130081300813009,
+          "false_acceptance_rate_upper_95": 0.03798598259961325
+        },
+        "geometry_and_gaussian": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 47,
+          "true_accepts": 46,
+          "false_accepts": 1,
+          "coverage": 0.25405405405405407,
+          "precision": 0.9787234042553191,
+          "recall": 0.7419354838709677,
+          "false_acceptance_rate": 0.008130081300813009,
+          "false_acceptance_rate_upper_95": 0.03798598259961325
+        }
+      },
+      {
+        "split": 6,
+        "dataset": "bevgsreg_transfer",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 54,
+          "true_accepts": 46,
+          "false_accepts": 8,
+          "coverage": 0.242152466367713,
+          "precision": 0.8518518518518519,
+          "recall": 0.3770491803278688,
+          "false_acceptance_rate": 0.07920792079207921,
+          "false_acceptance_rate_upper_95": 0.13837903652985845
+        },
+        "geometry_and_gaussian": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 54,
+          "true_accepts": 46,
+          "false_accepts": 8,
+          "coverage": 0.242152466367713,
+          "precision": 0.8518518518518519,
+          "recall": 0.3770491803278688,
+          "false_acceptance_rate": 0.07920792079207921,
+          "false_acceptance_rate_upper_95": 0.13837903652985845
+        }
+      },
+      {
+        "split": 7,
+        "dataset": "scannet_heldout",
+        "affinity_floor": 0.39378196635180956,
+        "geometry_only": {
+          "outputs": 410,
+          "positives": 32,
+          "accepted": 46,
+          "true_accepts": 22,
+          "false_accepts": 24,
+          "coverage": 0.11219512195121951,
+          "precision": 0.4782608695652174,
+          "recall": 0.6875,
+          "false_acceptance_rate": 0.06349206349206349,
+          "false_acceptance_rate_upper_95": 0.08813274036802185
+        },
+        "geometry_and_gaussian": {
+          "outputs": 410,
+          "positives": 32,
+          "accepted": 33,
+          "true_accepts": 22,
+          "false_accepts": 11,
+          "coverage": 0.08048780487804878,
+          "precision": 0.6666666666666666,
+          "recall": 0.6875,
+          "false_acceptance_rate": 0.0291005291005291,
+          "false_acceptance_rate_upper_95": 0.047708670274184364
+        }
+      },
+      {
+        "split": 7,
+        "dataset": "eth3d_transfer",
+        "affinity_floor": 0.39378196635180956,
+        "geometry_only": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 55,
+          "true_accepts": 49,
+          "false_accepts": 6,
+          "coverage": 0.2972972972972973,
+          "precision": 0.8909090909090909,
+          "recall": 0.7903225806451613,
+          "false_acceptance_rate": 0.04878048780487805,
+          "false_acceptance_rate_upper_95": 0.09400423320523969
+        },
+        "geometry_and_gaussian": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 49,
+          "true_accepts": 46,
+          "false_accepts": 3,
+          "coverage": 0.2648648648648649,
+          "precision": 0.9387755102040817,
+          "recall": 0.7419354838709677,
+          "false_acceptance_rate": 0.024390243902439025,
+          "false_acceptance_rate_upper_95": 0.06182895497800855
+        }
+      },
+      {
+        "split": 7,
+        "dataset": "bevgsreg_transfer",
+        "affinity_floor": 0.39378196635180956,
+        "geometry_only": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 79,
+          "true_accepts": 67,
+          "false_accepts": 12,
+          "coverage": 0.3542600896860987,
+          "precision": 0.8481012658227848,
+          "recall": 0.5491803278688525,
+          "false_acceptance_rate": 0.1188118811881188,
+          "false_acceptance_rate_upper_95": 0.185384448319555
+        },
+        "geometry_and_gaussian": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 72,
+          "true_accepts": 64,
+          "false_accepts": 8,
+          "coverage": 0.32286995515695066,
+          "precision": 0.8888888888888888,
+          "recall": 0.5245901639344263,
+          "false_acceptance_rate": 0.07920792079207921,
+          "false_acceptance_rate_upper_95": 0.13837903652985845
+        }
+      },
+      {
+        "split": 8,
+        "dataset": "scannet_heldout",
+        "affinity_floor": 0.4132056918920342,
+        "geometry_only": {
+          "outputs": 410,
+          "positives": 35,
+          "accepted": 43,
+          "true_accepts": 21,
+          "false_accepts": 22,
+          "coverage": 0.1048780487804878,
+          "precision": 0.4883720930232558,
+          "recall": 0.6,
+          "false_acceptance_rate": 0.058666666666666666,
+          "false_acceptance_rate_upper_95": 0.08271543502011487
+        },
+        "geometry_and_gaussian": {
+          "outputs": 410,
+          "positives": 35,
+          "accepted": 34,
+          "true_accepts": 21,
+          "false_accepts": 13,
+          "coverage": 0.08292682926829269,
+          "precision": 0.6176470588235294,
+          "recall": 0.6,
+          "false_acceptance_rate": 0.034666666666666665,
+          "false_acceptance_rate_upper_95": 0.05455197658397982
+        }
+      },
+      {
+        "split": 8,
+        "dataset": "eth3d_transfer",
+        "affinity_floor": 0.4132056918920342,
+        "geometry_only": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 55,
+          "true_accepts": 49,
+          "false_accepts": 6,
+          "coverage": 0.2972972972972973,
+          "precision": 0.8909090909090909,
+          "recall": 0.7903225806451613,
+          "false_acceptance_rate": 0.04878048780487805,
+          "false_acceptance_rate_upper_95": 0.09400423320523969
+        },
+        "geometry_and_gaussian": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 49,
+          "true_accepts": 46,
+          "false_accepts": 3,
+          "coverage": 0.2648648648648649,
+          "precision": 0.9387755102040817,
+          "recall": 0.7419354838709677,
+          "false_acceptance_rate": 0.024390243902439025,
+          "false_acceptance_rate_upper_95": 0.06182895497800855
+        }
+      },
+      {
+        "split": 8,
+        "dataset": "bevgsreg_transfer",
+        "affinity_floor": 0.4132056918920342,
+        "geometry_only": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 75,
+          "true_accepts": 64,
+          "false_accepts": 11,
+          "coverage": 0.336322869955157,
+          "precision": 0.8533333333333334,
+          "recall": 0.5245901639344263,
+          "false_acceptance_rate": 0.10891089108910891,
+          "false_acceptance_rate_upper_95": 0.17382973236712354
+        },
+        "geometry_and_gaussian": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 70,
+          "true_accepts": 62,
+          "false_accepts": 8,
+          "coverage": 0.31390134529147984,
+          "precision": 0.8857142857142857,
+          "recall": 0.5081967213114754,
+          "false_acceptance_rate": 0.07920792079207921,
+          "false_acceptance_rate_upper_95": 0.13837903652985845
+        }
+      },
+      {
+        "split": 9,
+        "dataset": "scannet_heldout",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 410,
+          "positives": 38,
+          "accepted": 21,
+          "true_accepts": 17,
+          "false_accepts": 4,
+          "coverage": 0.05121951219512195,
+          "precision": 0.8095238095238095,
+          "recall": 0.4473684210526316,
+          "false_acceptance_rate": 0.010752688172043012,
+          "false_acceptance_rate_upper_95": 0.02443617885470327
+        },
+        "geometry_and_gaussian": {
+          "outputs": 410,
+          "positives": 38,
+          "accepted": 18,
+          "true_accepts": 17,
+          "false_accepts": 1,
+          "coverage": 0.04390243902439024,
+          "precision": 0.9444444444444444,
+          "recall": 0.4473684210526316,
+          "false_acceptance_rate": 0.002688172043010753,
+          "false_acceptance_rate_upper_95": 0.012688332762914535
+        }
+      },
+      {
+        "split": 9,
+        "dataset": "eth3d_transfer",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 44,
+          "true_accepts": 43,
+          "false_accepts": 1,
+          "coverage": 0.23783783783783785,
+          "precision": 0.9772727272727273,
+          "recall": 0.6935483870967742,
+          "false_acceptance_rate": 0.008130081300813009,
+          "false_acceptance_rate_upper_95": 0.03798598259961325
+        },
+        "geometry_and_gaussian": {
+          "outputs": 185,
+          "positives": 62,
+          "accepted": 43,
+          "true_accepts": 42,
+          "false_accepts": 1,
+          "coverage": 0.23243243243243245,
+          "precision": 0.9767441860465116,
+          "recall": 0.6774193548387096,
+          "false_acceptance_rate": 0.008130081300813009,
+          "false_acceptance_rate_upper_95": 0.03798598259961325
+        }
+      },
+      {
+        "split": 9,
+        "dataset": "bevgsreg_transfer",
+        "affinity_floor": 0.35345687894637773,
+        "geometry_only": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 43,
+          "true_accepts": 37,
+          "false_accepts": 6,
+          "coverage": 0.19282511210762332,
+          "precision": 0.8604651162790697,
+          "recall": 0.30327868852459017,
+          "false_acceptance_rate": 0.0594059405940594,
+          "false_acceptance_rate_upper_95": 0.11388030321507024
+        },
+        "geometry_and_gaussian": {
+          "outputs": 223,
+          "positives": 122,
+          "accepted": 43,
+          "true_accepts": 37,
+          "false_accepts": 6,
+          "coverage": 0.19282511210762332,
+          "precision": 0.8604651162790697,
+          "recall": 0.30327868852459017,
+          "false_acceptance_rate": 0.0594059405940594,
+          "false_acceptance_rate_upper_95": 0.11388030321507024
+        }
+      }
+    ]
+  }
+}

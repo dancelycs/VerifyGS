@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "verifygs"
+version = "1.0.0"
+description = "Conformal and Gaussian-consistent verification of 3D Gaussian map registration"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+  {name = "Jie Yang"},
+  {name = "Shaoyan Gai"},
+  {name = "Feipeng Da"},
+]
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+evaluation = ["matplotlib>=3.7", "scikit-learn>=1.2"]
+test = ["pytest>=7", "scikit-learn>=1.2"]
+
+[project.scripts]
+verifygs = "verifygs.cli:main"
+
+[tool.setuptools]
+packages = ["verifygs"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
